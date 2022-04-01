@@ -1,79 +1,71 @@
-﻿port: 7890
+port: 7890
 socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN_390, server: 117.28.243.165, port: 8050, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: Relay_🇭🇰HK-🇭🇰HK_529 |33.72Mb, server: hk.195382.xyz, port: 1001, type: vmess, uuid: 30d602fe-d0c1-4dbc-beb6-3a8c65462789, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk.195382.xyz}, udp: true}
+  - {name: Relay_🇭🇰HK-🇺🇸US_528 |25.59Mb, server: zz.195382.xyz, port: 10008, type: vmess, uuid: 30d602fe-d0c1-4dbc-beb6-3a8c65462789, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: zz.195382.xyz}, udp: true}
+  - {name: Relay_🇭🇰HK-🇮🇳IN_524 |25.87Mb, server: zz.195382.xyz, port: 10007, type: vmess, uuid: 30d602fe-d0c1-4dbc-beb6-3a8c65462789, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: zz.195382.xyz}, udp: true}
+  - {name: Relay_🇭🇰HK-🇯🇵JP_525, server: zz.195382.xyz, port: 10005, type: vmess, uuid: 30d602fe-d0c1-4dbc-beb6-3a8c65462789, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: zz.195382.xyz}, udp: true}
   - {name: trojan@洛杉矶, server: v2.zmices.com, port: 26294, type: trojan, password: FVcKmNxKM8, sni: v2.zmices.com, skip-cert-verify: true, udp: true}
-  - {name: vmess@洛杉矶, server: v2.zmices.com, port: 21954, type: vmess, uuid: eaa6fdb2-0fb1-4750-e18d-e190a9b91c2d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: US_2147 |58.15Mb, server: 23.224.102.167, port: 19622, type: vmess, uuid: c158fe97-1a36-4919-c494-62744344a187, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 23.224.102.167}, udp: true}
+  - {name: 油管 TG 8度科技, server: 104.16.162.16, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxus.fovi.tk}, udp: true}
+  - {name: Relay_ |166.41Mb, server: us2.tcpbbr.net, port: 443, type: trojan, password: 08d178d4-ec8b-11eb-a8bf-f23c91cfbbc9, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: Relay_ |57.48Mb, server: misaka1433.tk, port: 443, type: trojan, password: JAtFrEpLX8mryvu8, sni: misaka1433.tk, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_2284, server: s162.s2022.xyz, port: 23802, type: trojan, password: d724e4d0-841b-3b92-ac0d-70fcbbb7e934, sni: s162.s2022.xyz, skip-cert-verify: true, udp: true}
   - {name: US_油管 TG 8度科技, server: tj-us01.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, sni: tj-us01.yiyodns.xyz, skip-cert-verify: true, udp: true}
-  - {name: ZZ_4011 |10.77Mb, server: 5.44.249.43, port: 3389, type: trojan, password: 6f0a9d0fa39d65fa, skip-cert-verify: true, udp: true}
-  - {name: HK_油管 TG 8度科技, server: 0320hkhh.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 0320hkhh.fans8.xyz}, udp: true}
-  - {name: HK_油管 TG 8度科技 2, server: 0320hk567.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 0320hk567.fans8.xyz}, udp: true}
-  - {name: null_油管 TG 8度科技, server: 0316ro.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /nl, ws-headers: {Host: 0316ro.fans8.xyz}, udp: true}
-  - {name: TW_油管 TG 8度科技, server: 0314tw02.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 0314tw02.fans8.xyz}, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_311 | 3.27Mb, server: 14.29.124.174, port: 22295, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_316 | 3.43Mb, server: 14.29.124.174, port: 22277, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_331 | 2.47Mb, server: 14.29.124.174, port: 21941, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: Relay_ | 9.29Mb, server: v2-r02.xiaohouzi.club, port: 10082, type: vmess, uuid: dbf20899-f0d8-33bd-bed0-ddc16105dfe3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: v2-r02.xiaohouzi.club}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_390
+      - Relay_🇭🇰HK-🇭🇰HK_529 |33.72Mb
+      - Relay_🇭🇰HK-🇺🇸US_528 |25.59Mb
+      - Relay_🇭🇰HK-🇮🇳IN_524 |25.87Mb
+      - Relay_🇭🇰HK-🇯🇵JP_525
       - trojan@洛杉矶
-      - vmess@洛杉矶
-      - US_2147 |58.15Mb
+      - 油管 TG 8度科技
+      - Relay_ |166.41Mb
+      - Relay_ |57.48Mb
+      - Relay_🇺🇸US-🇺🇸US_2284
       - US_油管 TG 8度科技
-      - ZZ_4011 |10.77Mb
-      - HK_油管 TG 8度科技
-      - HK_油管 TG 8度科技 2
-      - null_油管 TG 8度科技
-      - TW_油管 TG 8度科技
-      - Relay_🇨🇳CN-🇹🇼TW_311 | 3.27Mb
-      - Relay_🇨🇳CN-🇹🇼TW_316 | 3.43Mb
-      - Relay_🇨🇳CN-🇹🇼TW_331 | 2.47Mb
+      - Relay_ | 9.29Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN_390
+      - Relay_🇭🇰HK-🇭🇰HK_529 |33.72Mb
+      - Relay_🇭🇰HK-🇺🇸US_528 |25.59Mb
+      - Relay_🇭🇰HK-🇮🇳IN_524 |25.87Mb
+      - Relay_🇭🇰HK-🇯🇵JP_525
       - trojan@洛杉矶
-      - vmess@洛杉矶
-      - US_2147 |58.15Mb
+      - 油管 TG 8度科技
+      - Relay_ |166.41Mb
+      - Relay_ |57.48Mb
+      - Relay_🇺🇸US-🇺🇸US_2284
       - US_油管 TG 8度科技
-      - ZZ_4011 |10.77Mb
-      - HK_油管 TG 8度科技
-      - HK_油管 TG 8度科技 2
-      - null_油管 TG 8度科技
-      - TW_油管 TG 8度科技
-      - Relay_🇨🇳CN-🇹🇼TW_311 | 3.27Mb
-      - Relay_🇨🇳CN-🇹🇼TW_316 | 3.43Mb
-      - Relay_🇨🇳CN-🇹🇼TW_331 | 2.47Mb
+      - Relay_ | 9.29Mb
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_390
+      - Relay_🇭🇰HK-🇭🇰HK_529 |33.72Mb
+      - Relay_🇭🇰HK-🇺🇸US_528 |25.59Mb
+      - Relay_🇭🇰HK-🇮🇳IN_524 |25.87Mb
+      - Relay_🇭🇰HK-🇯🇵JP_525
       - trojan@洛杉矶
-      - vmess@洛杉矶
-      - US_2147 |58.15Mb
+      - 油管 TG 8度科技
+      - Relay_ |166.41Mb
+      - Relay_ |57.48Mb
+      - Relay_🇺🇸US-🇺🇸US_2284
       - US_油管 TG 8度科技
-      - ZZ_4011 |10.77Mb
-      - HK_油管 TG 8度科技
-      - HK_油管 TG 8度科技 2
-      - null_油管 TG 8度科技
-      - TW_油管 TG 8度科技
-      - Relay_🇨🇳CN-🇹🇼TW_311 | 3.27Mb
-      - Relay_🇨🇳CN-🇹🇼TW_316 | 3.43Mb
-      - Relay_🇨🇳CN-🇹🇼TW_331 | 2.47Mb
+      - Relay_ | 9.29Mb
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -92,19 +84,17 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_390
+      - Relay_🇭🇰HK-🇭🇰HK_529 |33.72Mb
+      - Relay_🇭🇰HK-🇺🇸US_528 |25.59Mb
+      - Relay_🇭🇰HK-🇮🇳IN_524 |25.87Mb
+      - Relay_🇭🇰HK-🇯🇵JP_525
       - trojan@洛杉矶
-      - vmess@洛杉矶
-      - US_2147 |58.15Mb
+      - 油管 TG 8度科技
+      - Relay_ |166.41Mb
+      - Relay_ |57.48Mb
+      - Relay_🇺🇸US-🇺🇸US_2284
       - US_油管 TG 8度科技
-      - ZZ_4011 |10.77Mb
-      - HK_油管 TG 8度科技
-      - HK_油管 TG 8度科技 2
-      - null_油管 TG 8度科技
-      - TW_油管 TG 8度科技
-      - Relay_🇨🇳CN-🇹🇼TW_311 | 3.27Mb
-      - Relay_🇨🇳CN-🇹🇼TW_316 | 3.43Mb
-      - Relay_🇨🇳CN-🇹🇼TW_331 | 2.47Mb
+      - Relay_ | 9.29Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -115,56 +105,50 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN_390
+      - Relay_🇭🇰HK-🇭🇰HK_529 |33.72Mb
+      - Relay_🇭🇰HK-🇺🇸US_528 |25.59Mb
+      - Relay_🇭🇰HK-🇮🇳IN_524 |25.87Mb
+      - Relay_🇭🇰HK-🇯🇵JP_525
       - trojan@洛杉矶
-      - vmess@洛杉矶
-      - US_2147 |58.15Mb
+      - 油管 TG 8度科技
+      - Relay_ |166.41Mb
+      - Relay_ |57.48Mb
+      - Relay_🇺🇸US-🇺🇸US_2284
       - US_油管 TG 8度科技
-      - ZZ_4011 |10.77Mb
-      - HK_油管 TG 8度科技
-      - HK_油管 TG 8度科技 2
-      - null_油管 TG 8度科技
-      - TW_油管 TG 8度科技
-      - Relay_🇨🇳CN-🇹🇼TW_311 | 3.27Mb
-      - Relay_🇨🇳CN-🇹🇼TW_316 | 3.43Mb
-      - Relay_🇨🇳CN-🇹🇼TW_331 | 2.47Mb
+      - Relay_ | 9.29Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN_390
+      - Relay_🇭🇰HK-🇭🇰HK_529 |33.72Mb
+      - Relay_🇭🇰HK-🇺🇸US_528 |25.59Mb
+      - Relay_🇭🇰HK-🇮🇳IN_524 |25.87Mb
+      - Relay_🇭🇰HK-🇯🇵JP_525
       - trojan@洛杉矶
-      - vmess@洛杉矶
-      - US_2147 |58.15Mb
+      - 油管 TG 8度科技
+      - Relay_ |166.41Mb
+      - Relay_ |57.48Mb
+      - Relay_🇺🇸US-🇺🇸US_2284
       - US_油管 TG 8度科技
-      - ZZ_4011 |10.77Mb
-      - HK_油管 TG 8度科技
-      - HK_油管 TG 8度科技 2
-      - null_油管 TG 8度科技
-      - TW_油管 TG 8度科技
-      - Relay_🇨🇳CN-🇹🇼TW_311 | 3.27Mb
-      - Relay_🇨🇳CN-🇹🇼TW_316 | 3.43Mb
-      - Relay_🇨🇳CN-🇹🇼TW_331 | 2.47Mb
+      - Relay_ | 9.29Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_390
+      - Relay_🇭🇰HK-🇭🇰HK_529 |33.72Mb
+      - Relay_🇭🇰HK-🇺🇸US_528 |25.59Mb
+      - Relay_🇭🇰HK-🇮🇳IN_524 |25.87Mb
+      - Relay_🇭🇰HK-🇯🇵JP_525
       - trojan@洛杉矶
-      - vmess@洛杉矶
-      - US_2147 |58.15Mb
+      - 油管 TG 8度科技
+      - Relay_ |166.41Mb
+      - Relay_ |57.48Mb
+      - Relay_🇺🇸US-🇺🇸US_2284
       - US_油管 TG 8度科技
-      - ZZ_4011 |10.77Mb
-      - HK_油管 TG 8度科技
-      - HK_油管 TG 8度科技 2
-      - null_油管 TG 8度科技
-      - TW_油管 TG 8度科技
-      - Relay_🇨🇳CN-🇹🇼TW_311 | 3.27Mb
-      - Relay_🇨🇳CN-🇹🇼TW_316 | 3.43Mb
-      - Relay_🇨🇳CN-🇹🇼TW_331 | 2.47Mb
+      - Relay_ | 9.29Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -180,19 +164,17 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_390
+      - Relay_🇭🇰HK-🇭🇰HK_529 |33.72Mb
+      - Relay_🇭🇰HK-🇺🇸US_528 |25.59Mb
+      - Relay_🇭🇰HK-🇮🇳IN_524 |25.87Mb
+      - Relay_🇭🇰HK-🇯🇵JP_525
       - trojan@洛杉矶
-      - vmess@洛杉矶
-      - US_2147 |58.15Mb
+      - 油管 TG 8度科技
+      - Relay_ |166.41Mb
+      - Relay_ |57.48Mb
+      - Relay_🇺🇸US-🇺🇸US_2284
       - US_油管 TG 8度科技
-      - ZZ_4011 |10.77Mb
-      - HK_油管 TG 8度科技
-      - HK_油管 TG 8度科技 2
-      - null_油管 TG 8度科技
-      - TW_油管 TG 8度科技
-      - Relay_🇨🇳CN-🇹🇼TW_311 | 3.27Mb
-      - Relay_🇨🇳CN-🇹🇼TW_316 | 3.43Mb
-      - Relay_🇨🇳CN-🇹🇼TW_331 | 2.47Mb
+      - Relay_ | 9.29Mb
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
