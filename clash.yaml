@@ -5,55 +5,135 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN_8du.shop, server: cn1.relay.iepl.pw, port: 50500, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a, udp: true}
-  - {name: CN_8du.shop 2, server: cn1.relay.iepl.pw, port: 50300, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a, udp: true}
-  - {name: CN_8du.shop 3, server: cn1.relay.iepl.pw, port: 50200, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a, udp: true}
-  - {name: TW, server: 330tw.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 330tw.fans8.xyz}, udp: true}
-  - {name: CN_8du.shop 4, server: cn1.relay.iepl.pw, port: 50400, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a, udp: true}
-  - {name: CN_8du.shop 5, server: cn1.relay.iepl.pw, port: 50700, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_37, server: trojan1.free4444.xyz, port: 443, type: trojan, password: dongtaiwang.com, sni: trojan1.free4444.xyz, skip-cert-verify: true, udp: true}
-  - {name: trojan@洛杉矶, server: v2.zmices.com, port: 26294, type: trojan, password: FVcKmNxKM8, sni: v2.zmices.com, skip-cert-verify: true, udp: true}
+  - {name: CN_欢迎下载软件库app, server: cn1.relay.iepl.pw, port: 50400, type: ss, cipher: aes-128-gcm, password: a67ad154-cfea-4305-8e25-ddd50809a5e2, udp: true}
+  - {name: CN_欢迎下载软件库app 2, server: gtm-sg-6wr2na7z604.gtm-i1d9.com, port: 47018, type: vmess, uuid: 63d9a40c-5ce9-3025-8e7e-8630cba33480, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: gtm-sg-6wr2na7z604.gtm-i1d9.com}, udp: true}
+  - {name: CN_欢迎下载软件库app 3, server: cn1.relay.iepl.pw, port: 50300, type: ss, cipher: aes-128-gcm, password: a67ad154-cfea-4305-8e25-ddd50809a5e2, udp: true}
+  - {name: CN_欢迎下载软件库app 4, server: gtm-sg-6wr2na7z604.gtm-i1d9.com, port: 47013, type: vmess, uuid: 63d9a40c-5ce9-3025-8e7e-8630cba33480, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: gtm-sg-6wr2na7z604.gtm-i1d9.com}, udp: true}
+  - {name: CN_欢迎下载软件库app 5, server: cn1.relay.iepl.pw, port: 50200, type: ss, cipher: aes-128-gcm, password: a67ad154-cfea-4305-8e25-ddd50809a5e2, udp: true}
+  - {name: CN_欢迎下载软件库app 6, server: cn1.relay.iepl.pw, port: 50500, type: ss, cipher: aes-128-gcm, password: a67ad154-cfea-4305-8e25-ddd50809a5e2, udp: true}
+  - {name: KR_欢迎下载软件库app, server: krnf2.qingyun123.xyz, port: 10050, type: trojan, password: ffd69eae-7cda-4691-accd-7ec7f6a4e216, sni: krnf2.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_欢迎下载软件库app, server: hknf2.qingyun123.xyz, port: 10070, type: trojan, password: ffd69eae-7cda-4691-accd-7ec7f6a4e216, sni: hknf2.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_欢迎下载软件库app 2, server: trojan2.free4444.xyz, port: 443, type: trojan, password: dongtaiwang.com, sni: trojan2.free4444.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN_欢迎下载软件库app 7, server: cn1.relay.iepl.pw, port: 50100, type: ss, cipher: aes-128-gcm, password: a67ad154-cfea-4305-8e25-ddd50809a5e2, udp: true}
+  - {name: US_145+TG@peekfun, server: 38.68.134.191, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_140+TG@peekfun, server: 38.68.134.191, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_1481+|84.74Mb, server: 38.68.134.191, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_136+TG@peekfun, server: 38.68.134.191, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_144+TG@peekfun, server: 172.99.190.90, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_137+TG@peekfun, server: 38.68.134.191, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_135+TG@peekfun, server: 38.68.134.191, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_153+TG@peekfun, server: 38.68.134.191, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_151+TG@peekfun, server: 172.99.190.90, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_141+TG@peekfun, server: 172.99.190.90, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_148+TG@peekfun, server: 172.99.190.90, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_149+TG@peekfun, server: 172.99.190.90, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_147+TG@peekfun, server: 38.68.134.191, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_152+TG@peekfun, server: 38.68.134.191, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_150+TG@peekfun, server: 38.68.134.191, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_138+TG@peekfun, server: 172.99.190.90, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_139+TG@peekfun, server: 172.99.190.90, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CN_欢迎下载软件库app 8, server: cn1.relay.iepl.pw, port: 50600, type: ss, cipher: aes-128-gcm, password: a67ad154-cfea-4305-8e25-ddd50809a5e2, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_8du.shop
-      - CN_8du.shop 2
-      - CN_8du.shop 3
-      - TW
-      - CN_8du.shop 4
-      - CN_8du.shop 5
-      - Relay_🇺🇸US-🇺🇸US_37
-      - trojan@洛杉矶
+      - CN_欢迎下载软件库app
+      - CN_欢迎下载软件库app 2
+      - CN_欢迎下载软件库app 3
+      - CN_欢迎下载软件库app 4
+      - CN_欢迎下载软件库app 5
+      - CN_欢迎下载软件库app 6
+      - KR_欢迎下载软件库app
+      - US_欢迎下载软件库app
+      - US_欢迎下载软件库app 2
+      - CN_欢迎下载软件库app 7
+      - US_145+TG@peekfun
+      - US_140+TG@peekfun
+      - US_1481+|84.74Mb
+      - US_136+TG@peekfun
+      - US_144+TG@peekfun
+      - US_137+TG@peekfun
+      - US_135+TG@peekfun
+      - US_153+TG@peekfun
+      - US_151+TG@peekfun
+      - US_141+TG@peekfun
+      - US_148+TG@peekfun
+      - US_149+TG@peekfun
+      - US_147+TG@peekfun
+      - US_152+TG@peekfun
+      - US_150+TG@peekfun
+      - US_138+TG@peekfun
+      - US_139+TG@peekfun
+      - CN_欢迎下载软件库app 8
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN_8du.shop
-      - CN_8du.shop 2
-      - CN_8du.shop 3
-      - TW
-      - CN_8du.shop 4
-      - CN_8du.shop 5
-      - Relay_🇺🇸US-🇺🇸US_37
-      - trojan@洛杉矶
+      - CN_欢迎下载软件库app
+      - CN_欢迎下载软件库app 2
+      - CN_欢迎下载软件库app 3
+      - CN_欢迎下载软件库app 4
+      - CN_欢迎下载软件库app 5
+      - CN_欢迎下载软件库app 6
+      - KR_欢迎下载软件库app
+      - US_欢迎下载软件库app
+      - US_欢迎下载软件库app 2
+      - CN_欢迎下载软件库app 7
+      - US_145+TG@peekfun
+      - US_140+TG@peekfun
+      - US_1481+|84.74Mb
+      - US_136+TG@peekfun
+      - US_144+TG@peekfun
+      - US_137+TG@peekfun
+      - US_135+TG@peekfun
+      - US_153+TG@peekfun
+      - US_151+TG@peekfun
+      - US_141+TG@peekfun
+      - US_148+TG@peekfun
+      - US_149+TG@peekfun
+      - US_147+TG@peekfun
+      - US_152+TG@peekfun
+      - US_150+TG@peekfun
+      - US_138+TG@peekfun
+      - US_139+TG@peekfun
+      - CN_欢迎下载软件库app 8
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_8du.shop
-      - CN_8du.shop 2
-      - CN_8du.shop 3
-      - TW
-      - CN_8du.shop 4
-      - CN_8du.shop 5
-      - Relay_🇺🇸US-🇺🇸US_37
-      - trojan@洛杉矶
+      - CN_欢迎下载软件库app
+      - CN_欢迎下载软件库app 2
+      - CN_欢迎下载软件库app 3
+      - CN_欢迎下载软件库app 4
+      - CN_欢迎下载软件库app 5
+      - CN_欢迎下载软件库app 6
+      - KR_欢迎下载软件库app
+      - US_欢迎下载软件库app
+      - US_欢迎下载软件库app 2
+      - CN_欢迎下载软件库app 7
+      - US_145+TG@peekfun
+      - US_140+TG@peekfun
+      - US_1481+|84.74Mb
+      - US_136+TG@peekfun
+      - US_144+TG@peekfun
+      - US_137+TG@peekfun
+      - US_135+TG@peekfun
+      - US_153+TG@peekfun
+      - US_151+TG@peekfun
+      - US_141+TG@peekfun
+      - US_148+TG@peekfun
+      - US_149+TG@peekfun
+      - US_147+TG@peekfun
+      - US_152+TG@peekfun
+      - US_150+TG@peekfun
+      - US_138+TG@peekfun
+      - US_139+TG@peekfun
+      - CN_欢迎下载软件库app 8
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -72,14 +152,34 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_8du.shop
-      - CN_8du.shop 2
-      - CN_8du.shop 3
-      - TW
-      - CN_8du.shop 4
-      - CN_8du.shop 5
-      - Relay_🇺🇸US-🇺🇸US_37
-      - trojan@洛杉矶
+      - CN_欢迎下载软件库app
+      - CN_欢迎下载软件库app 2
+      - CN_欢迎下载软件库app 3
+      - CN_欢迎下载软件库app 4
+      - CN_欢迎下载软件库app 5
+      - CN_欢迎下载软件库app 6
+      - KR_欢迎下载软件库app
+      - US_欢迎下载软件库app
+      - US_欢迎下载软件库app 2
+      - CN_欢迎下载软件库app 7
+      - US_145+TG@peekfun
+      - US_140+TG@peekfun
+      - US_1481+|84.74Mb
+      - US_136+TG@peekfun
+      - US_144+TG@peekfun
+      - US_137+TG@peekfun
+      - US_135+TG@peekfun
+      - US_153+TG@peekfun
+      - US_151+TG@peekfun
+      - US_141+TG@peekfun
+      - US_148+TG@peekfun
+      - US_149+TG@peekfun
+      - US_147+TG@peekfun
+      - US_152+TG@peekfun
+      - US_150+TG@peekfun
+      - US_138+TG@peekfun
+      - US_139+TG@peekfun
+      - CN_欢迎下载软件库app 8
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -90,41 +190,101 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN_8du.shop
-      - CN_8du.shop 2
-      - CN_8du.shop 3
-      - TW
-      - CN_8du.shop 4
-      - CN_8du.shop 5
-      - Relay_🇺🇸US-🇺🇸US_37
-      - trojan@洛杉矶
+      - CN_欢迎下载软件库app
+      - CN_欢迎下载软件库app 2
+      - CN_欢迎下载软件库app 3
+      - CN_欢迎下载软件库app 4
+      - CN_欢迎下载软件库app 5
+      - CN_欢迎下载软件库app 6
+      - KR_欢迎下载软件库app
+      - US_欢迎下载软件库app
+      - US_欢迎下载软件库app 2
+      - CN_欢迎下载软件库app 7
+      - US_145+TG@peekfun
+      - US_140+TG@peekfun
+      - US_1481+|84.74Mb
+      - US_136+TG@peekfun
+      - US_144+TG@peekfun
+      - US_137+TG@peekfun
+      - US_135+TG@peekfun
+      - US_153+TG@peekfun
+      - US_151+TG@peekfun
+      - US_141+TG@peekfun
+      - US_148+TG@peekfun
+      - US_149+TG@peekfun
+      - US_147+TG@peekfun
+      - US_152+TG@peekfun
+      - US_150+TG@peekfun
+      - US_138+TG@peekfun
+      - US_139+TG@peekfun
+      - CN_欢迎下载软件库app 8
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN_8du.shop
-      - CN_8du.shop 2
-      - CN_8du.shop 3
-      - TW
-      - CN_8du.shop 4
-      - CN_8du.shop 5
-      - Relay_🇺🇸US-🇺🇸US_37
-      - trojan@洛杉矶
+      - CN_欢迎下载软件库app
+      - CN_欢迎下载软件库app 2
+      - CN_欢迎下载软件库app 3
+      - CN_欢迎下载软件库app 4
+      - CN_欢迎下载软件库app 5
+      - CN_欢迎下载软件库app 6
+      - KR_欢迎下载软件库app
+      - US_欢迎下载软件库app
+      - US_欢迎下载软件库app 2
+      - CN_欢迎下载软件库app 7
+      - US_145+TG@peekfun
+      - US_140+TG@peekfun
+      - US_1481+|84.74Mb
+      - US_136+TG@peekfun
+      - US_144+TG@peekfun
+      - US_137+TG@peekfun
+      - US_135+TG@peekfun
+      - US_153+TG@peekfun
+      - US_151+TG@peekfun
+      - US_141+TG@peekfun
+      - US_148+TG@peekfun
+      - US_149+TG@peekfun
+      - US_147+TG@peekfun
+      - US_152+TG@peekfun
+      - US_150+TG@peekfun
+      - US_138+TG@peekfun
+      - US_139+TG@peekfun
+      - CN_欢迎下载软件库app 8
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_8du.shop
-      - CN_8du.shop 2
-      - CN_8du.shop 3
-      - TW
-      - CN_8du.shop 4
-      - CN_8du.shop 5
-      - Relay_🇺🇸US-🇺🇸US_37
-      - trojan@洛杉矶
+      - CN_欢迎下载软件库app
+      - CN_欢迎下载软件库app 2
+      - CN_欢迎下载软件库app 3
+      - CN_欢迎下载软件库app 4
+      - CN_欢迎下载软件库app 5
+      - CN_欢迎下载软件库app 6
+      - KR_欢迎下载软件库app
+      - US_欢迎下载软件库app
+      - US_欢迎下载软件库app 2
+      - CN_欢迎下载软件库app 7
+      - US_145+TG@peekfun
+      - US_140+TG@peekfun
+      - US_1481+|84.74Mb
+      - US_136+TG@peekfun
+      - US_144+TG@peekfun
+      - US_137+TG@peekfun
+      - US_135+TG@peekfun
+      - US_153+TG@peekfun
+      - US_151+TG@peekfun
+      - US_141+TG@peekfun
+      - US_148+TG@peekfun
+      - US_149+TG@peekfun
+      - US_147+TG@peekfun
+      - US_152+TG@peekfun
+      - US_150+TG@peekfun
+      - US_138+TG@peekfun
+      - US_139+TG@peekfun
+      - CN_欢迎下载软件库app 8
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -140,14 +300,34 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_8du.shop
-      - CN_8du.shop 2
-      - CN_8du.shop 3
-      - TW
-      - CN_8du.shop 4
-      - CN_8du.shop 5
-      - Relay_🇺🇸US-🇺🇸US_37
-      - trojan@洛杉矶
+      - CN_欢迎下载软件库app
+      - CN_欢迎下载软件库app 2
+      - CN_欢迎下载软件库app 3
+      - CN_欢迎下载软件库app 4
+      - CN_欢迎下载软件库app 5
+      - CN_欢迎下载软件库app 6
+      - KR_欢迎下载软件库app
+      - US_欢迎下载软件库app
+      - US_欢迎下载软件库app 2
+      - CN_欢迎下载软件库app 7
+      - US_145+TG@peekfun
+      - US_140+TG@peekfun
+      - US_1481+|84.74Mb
+      - US_136+TG@peekfun
+      - US_144+TG@peekfun
+      - US_137+TG@peekfun
+      - US_135+TG@peekfun
+      - US_153+TG@peekfun
+      - US_151+TG@peekfun
+      - US_141+TG@peekfun
+      - US_148+TG@peekfun
+      - US_149+TG@peekfun
+      - US_147+TG@peekfun
+      - US_152+TG@peekfun
+      - US_150+TG@peekfun
+      - US_138+TG@peekfun
+      - US_139+TG@peekfun
+      - CN_欢迎下载软件库app 8
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
