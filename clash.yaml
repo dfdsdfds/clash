@@ -5,83 +5,71 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: US_233+TG@peekfun, server: 167.88.61.236, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: US_232+TG@peekfun, server: 167.88.61.236, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_2133, server: c23s3.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_238+TG@peekfun, server: 162.251.61.221, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: US_245+TG@peekfun, server: 162.251.61.221, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: CA_06+TG@peekfun, server: 196.247.59.156, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_2134, server: c23s801.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_2620 |68.96Mb, server: c23s3.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: NL_152+TG@peekfun, server: 85.208.108.58, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: IN_117+TG@peekfun, server: 172.105.58.152, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CA_291+|59.84Mb, server: 198.57.27.225, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: CA_278+|60.43Mb, server: 198.57.27.225, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_2618 |80.56Mb, server: c23s801.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_787, server: 38.68.135.19, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_1453+|52.17Mb, server: 38.68.135.19, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: HK_719+|20.97Mb, server: hkbn.okvpn.xyz, port: 12000, type: trojan, password: cbed95ba-b375-4816-80fb-964f38010dba, sni: hkbn.okvpn.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_1340+|18.57Mb, server: us-a.vmess.top, port: 39123, type: trojan, password: d8f386ac-ebf3-4fd1-9397-5eaca4b5889d, sni: us-a.vmess.top, skip-cert-verify: true, udp: true}
+  - {name: US_1285+|47.15Mb, server: 172.99.190.35, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_1282+|47.13Mb, server: 172.99.190.35, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_1287+|46.75Mb, server: 172.99.190.35, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_1283+|47.27Mb, server: 172.99.190.35, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_1290+|47.28Mb, server: 172.99.190.35, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_1286+|23.16Mb, server: 172.99.190.35, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ZZ_2619+|+4.57Mb, server: 134.195.196.205, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: CA_05+TG@peekfun, server: 198.57.27.225, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ZZ_2618+|36.96Mb, server: 134.195.196.205, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_1339+|47.69Mb, server: vui.sysucc.ga, port: 49865, type: trojan, password: MeQVCkMzCg, sni: vui.sysucc.ga, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_233+TG@peekfun
-      - US_232+TG@peekfun
-      - Relay_🇺🇸US-🇺🇸US_2133
-      - US_238+TG@peekfun
-      - US_245+TG@peekfun
-      - CA_06+TG@peekfun
-      - Relay_🇺🇸US-🇺🇸US_2134
-      - US_2620 |68.96Mb
-      - NL_152+TG@peekfun
-      - IN_117+TG@peekfun
-      - CA_291+|59.84Mb
-      - CA_278+|60.43Mb
-      - US_2618 |80.56Mb
-      - US_787
-      - US_1453+|52.17Mb
+      - HK_719+|20.97Mb
+      - US_1340+|18.57Mb
+      - US_1285+|47.15Mb
+      - US_1282+|47.13Mb
+      - US_1287+|46.75Mb
+      - US_1283+|47.27Mb
+      - US_1290+|47.28Mb
+      - US_1286+|23.16Mb
+      - ZZ_2619+|+4.57Mb
+      - CA_05+TG@peekfun
+      - ZZ_2618+|36.96Mb
+      - US_1339+|47.69Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - US_233+TG@peekfun
-      - US_232+TG@peekfun
-      - Relay_🇺🇸US-🇺🇸US_2133
-      - US_238+TG@peekfun
-      - US_245+TG@peekfun
-      - CA_06+TG@peekfun
-      - Relay_🇺🇸US-🇺🇸US_2134
-      - US_2620 |68.96Mb
-      - NL_152+TG@peekfun
-      - IN_117+TG@peekfun
-      - CA_291+|59.84Mb
-      - CA_278+|60.43Mb
-      - US_2618 |80.56Mb
-      - US_787
-      - US_1453+|52.17Mb
+      - HK_719+|20.97Mb
+      - US_1340+|18.57Mb
+      - US_1285+|47.15Mb
+      - US_1282+|47.13Mb
+      - US_1287+|46.75Mb
+      - US_1283+|47.27Mb
+      - US_1290+|47.28Mb
+      - US_1286+|23.16Mb
+      - ZZ_2619+|+4.57Mb
+      - CA_05+TG@peekfun
+      - ZZ_2618+|36.96Mb
+      - US_1339+|47.69Mb
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_233+TG@peekfun
-      - US_232+TG@peekfun
-      - Relay_🇺🇸US-🇺🇸US_2133
-      - US_238+TG@peekfun
-      - US_245+TG@peekfun
-      - CA_06+TG@peekfun
-      - Relay_🇺🇸US-🇺🇸US_2134
-      - US_2620 |68.96Mb
-      - NL_152+TG@peekfun
-      - IN_117+TG@peekfun
-      - CA_291+|59.84Mb
-      - CA_278+|60.43Mb
-      - US_2618 |80.56Mb
-      - US_787
-      - US_1453+|52.17Mb
+      - HK_719+|20.97Mb
+      - US_1340+|18.57Mb
+      - US_1285+|47.15Mb
+      - US_1282+|47.13Mb
+      - US_1287+|46.75Mb
+      - US_1283+|47.27Mb
+      - US_1290+|47.28Mb
+      - US_1286+|23.16Mb
+      - ZZ_2619+|+4.57Mb
+      - CA_05+TG@peekfun
+      - ZZ_2618+|36.96Mb
+      - US_1339+|47.69Mb
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -100,21 +88,18 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_233+TG@peekfun
-      - US_232+TG@peekfun
-      - Relay_🇺🇸US-🇺🇸US_2133
-      - US_238+TG@peekfun
-      - US_245+TG@peekfun
-      - CA_06+TG@peekfun
-      - Relay_🇺🇸US-🇺🇸US_2134
-      - US_2620 |68.96Mb
-      - NL_152+TG@peekfun
-      - IN_117+TG@peekfun
-      - CA_291+|59.84Mb
-      - CA_278+|60.43Mb
-      - US_2618 |80.56Mb
-      - US_787
-      - US_1453+|52.17Mb
+      - HK_719+|20.97Mb
+      - US_1340+|18.57Mb
+      - US_1285+|47.15Mb
+      - US_1282+|47.13Mb
+      - US_1287+|46.75Mb
+      - US_1283+|47.27Mb
+      - US_1290+|47.28Mb
+      - US_1286+|23.16Mb
+      - ZZ_2619+|+4.57Mb
+      - CA_05+TG@peekfun
+      - ZZ_2618+|36.96Mb
+      - US_1339+|47.69Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -125,62 +110,53 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - US_233+TG@peekfun
-      - US_232+TG@peekfun
-      - Relay_🇺🇸US-🇺🇸US_2133
-      - US_238+TG@peekfun
-      - US_245+TG@peekfun
-      - CA_06+TG@peekfun
-      - Relay_🇺🇸US-🇺🇸US_2134
-      - US_2620 |68.96Mb
-      - NL_152+TG@peekfun
-      - IN_117+TG@peekfun
-      - CA_291+|59.84Mb
-      - CA_278+|60.43Mb
-      - US_2618 |80.56Mb
-      - US_787
-      - US_1453+|52.17Mb
+      - HK_719+|20.97Mb
+      - US_1340+|18.57Mb
+      - US_1285+|47.15Mb
+      - US_1282+|47.13Mb
+      - US_1287+|46.75Mb
+      - US_1283+|47.27Mb
+      - US_1290+|47.28Mb
+      - US_1286+|23.16Mb
+      - ZZ_2619+|+4.57Mb
+      - CA_05+TG@peekfun
+      - ZZ_2618+|36.96Mb
+      - US_1339+|47.69Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - US_233+TG@peekfun
-      - US_232+TG@peekfun
-      - Relay_🇺🇸US-🇺🇸US_2133
-      - US_238+TG@peekfun
-      - US_245+TG@peekfun
-      - CA_06+TG@peekfun
-      - Relay_🇺🇸US-🇺🇸US_2134
-      - US_2620 |68.96Mb
-      - NL_152+TG@peekfun
-      - IN_117+TG@peekfun
-      - CA_291+|59.84Mb
-      - CA_278+|60.43Mb
-      - US_2618 |80.56Mb
-      - US_787
-      - US_1453+|52.17Mb
+      - HK_719+|20.97Mb
+      - US_1340+|18.57Mb
+      - US_1285+|47.15Mb
+      - US_1282+|47.13Mb
+      - US_1287+|46.75Mb
+      - US_1283+|47.27Mb
+      - US_1290+|47.28Mb
+      - US_1286+|23.16Mb
+      - ZZ_2619+|+4.57Mb
+      - CA_05+TG@peekfun
+      - ZZ_2618+|36.96Mb
+      - US_1339+|47.69Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US_233+TG@peekfun
-      - US_232+TG@peekfun
-      - Relay_🇺🇸US-🇺🇸US_2133
-      - US_238+TG@peekfun
-      - US_245+TG@peekfun
-      - CA_06+TG@peekfun
-      - Relay_🇺🇸US-🇺🇸US_2134
-      - US_2620 |68.96Mb
-      - NL_152+TG@peekfun
-      - IN_117+TG@peekfun
-      - CA_291+|59.84Mb
-      - CA_278+|60.43Mb
-      - US_2618 |80.56Mb
-      - US_787
-      - US_1453+|52.17Mb
+      - HK_719+|20.97Mb
+      - US_1340+|18.57Mb
+      - US_1285+|47.15Mb
+      - US_1282+|47.13Mb
+      - US_1287+|46.75Mb
+      - US_1283+|47.27Mb
+      - US_1290+|47.28Mb
+      - US_1286+|23.16Mb
+      - ZZ_2619+|+4.57Mb
+      - CA_05+TG@peekfun
+      - ZZ_2618+|36.96Mb
+      - US_1339+|47.69Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -196,21 +172,18 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US_233+TG@peekfun
-      - US_232+TG@peekfun
-      - Relay_🇺🇸US-🇺🇸US_2133
-      - US_238+TG@peekfun
-      - US_245+TG@peekfun
-      - CA_06+TG@peekfun
-      - Relay_🇺🇸US-🇺🇸US_2134
-      - US_2620 |68.96Mb
-      - NL_152+TG@peekfun
-      - IN_117+TG@peekfun
-      - CA_291+|59.84Mb
-      - CA_278+|60.43Mb
-      - US_2618 |80.56Mb
-      - US_787
-      - US_1453+|52.17Mb
+      - HK_719+|20.97Mb
+      - US_1340+|18.57Mb
+      - US_1285+|47.15Mb
+      - US_1282+|47.13Mb
+      - US_1287+|46.75Mb
+      - US_1283+|47.27Mb
+      - US_1290+|47.28Mb
+      - US_1286+|23.16Mb
+      - ZZ_2619+|+4.57Mb
+      - CA_05+TG@peekfun
+      - ZZ_2618+|36.96Mb
+      - US_1339+|47.69Mb
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
