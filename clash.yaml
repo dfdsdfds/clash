@@ -5,71 +5,655 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: HK_719+|20.97Mb, server: hkbn.okvpn.xyz, port: 12000, type: trojan, password: cbed95ba-b375-4816-80fb-964f38010dba, sni: hkbn.okvpn.xyz, skip-cert-verify: true, udp: true}
-  - {name: US_1340+|18.57Mb, server: us-a.vmess.top, port: 39123, type: trojan, password: d8f386ac-ebf3-4fd1-9397-5eaca4b5889d, sni: us-a.vmess.top, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop, server: 139.219.9.138, port: 19811, type: ss, cipher: chacha20-ietf-poly1305, password: 72b8aca3-ddcc-4c84-980a-98e853b3b10c, udp: true}
+  - {name: _商店：8du.shop 2, server: cn1.relay.iepl.pw, port: 50300, type: ss, cipher: aes-128-gcm, password: 379a0a11-3468-4eb5-b0d3-490e06459d9a, udp: true}
+  - {name: CN_342, server: jike1-cccn2.jiserver.xyz, port: 32603, type: vmess, uuid: 221828e0-4192-342c-99fc-9a0af6e06823, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-cccn2.jiserver.xyz}, udp: true}
+  - {name: _商店：8du.shop 3, server: fs.keaiyun.top, port: 55155, type: vmess, uuid: 6bdb5616-d0ca-3638-8a96-5a70b8ca27a5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: US_1285+|47.15Mb, server: 172.99.190.35, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: Relay_🇬🇧GB-🇬🇧GB_17, server: de-01.fireplay.io, port: 443, type: trojan, password: lo3TmsNaLWUXpuoE, sni: de-01.fireplay.io, skip-cert-verify: true, udp: true}
+  - {name: ‌‌🇨🇦CA_6679+@WangCai_1, server: 134.195.196.133, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: ‌‌🇨🇦CA_6679+@WangCai_1 2, server: 134.195.196.16, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _US_美国, server: 167.88.63.59, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_5003+@WangCai_1, server: 169.197.141.15, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: ‌‌🇨🇦CA_8091+@WangCai_1, server: 134.195.196.16, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: ‌‌🇨🇦CA_8000+@WangCai_1, server: 134.195.196.16, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_8091+@WangCai_1 2, server: 134.195.196.41, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: ‌‌🇨🇦CA_8091+@WangCai_1 3, server: 134.195.196.64, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: ‌‌🇨🇦CA_5000+@WangCai_1, server: 134.195.196.133, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_9102+@WangCai_1, server: 134.195.196.206, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: ‌‌🇨🇦CA_7307+@WangCai_1, server: 134.195.196.206, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: ‌‌🇨🇦CA_8000+@WangCai_1 2, server: 134.195.196.133, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_3389+@WangCai_1, server: 134.195.196.19, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_8118+@WangCai_1, server: 38.91.100.150, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: ‌‌🇨🇦CA_0443+@WangCai_1, server: 134.195.196.133, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_8009+@WangCai_1, server: 169.197.141.15, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ‌‌🇨🇦CA_8888+@WangCai_1, server: 134.195.196.41, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_6679+@WangCai_1 3, server: 134.195.196.206, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: ‌‌🇨🇦CA_3306+@WangCai_1, server: 134.195.196.41, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_5000+@WangCai_1 2, server: 134.195.196.41, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_6379+@WangCai_1, server: 134.195.196.206, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: US_9101+@WangCai_1, server: 38.91.100.150, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_8882+@WangCai_1, server: 38.91.100.150, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ‌‌🇨🇦CA_8119+@WangCai_1, server: 134.195.196.206, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: ‌‌🇨🇦CA_7002+@WangCai_1, server: 134.195.196.64, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_7307+@WangCai_1, server: 38.91.100.150, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_5000+@WangCai_1, server: 38.91.100.150, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_5004+@WangCai_1, server: 134.195.196.16, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: ‌‌🇨🇦CA_5600+@WangCai_1, server: 134.195.196.19, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_8008+@WangCai_1, server: 134.195.196.19, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ‌‌🇨🇦CA_8119+@WangCai_1 2, server: 134.195.196.41, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_0443+@WangCai_1, server: 38.91.100.150, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ‌‌🇨🇦CA_5001+@WangCai_1, server: 134.195.196.19, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_6697+@WangCai_1, server: 134.195.196.64, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_5500+@WangCai_1, server: 169.197.141.109, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_9101+@WangCai_1 2, server: 169.197.141.15, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_2376+@WangCai_1, server: 38.91.100.150, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: ‌‌🇨🇦CA_7307+@WangCai_1 2, server: 134.195.196.64, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_8881+@WangCai_1, server: 38.91.100.150, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ‌‌🇨🇦CA_2376+@WangCai_1, server: 134.195.196.206, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: ‌‌🇨🇦CA_8119+@WangCai_1 3, server: 134.195.196.64, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: ‌‌🇨🇦CA_8888+@WangCai_1 2, server: 134.195.196.133, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ZZ_256, server: 169.197.141.109, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_8118+@WangCai_1, server: 134.195.196.19, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: ‌‌🇨🇦CA_8090+@WangCai_1, server: 134.195.196.16, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: ‌‌🇨🇦CA_5001+@WangCai_1 2, server: 134.195.196.206, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_0443+@WangCai_1 2, server: 134.195.196.19, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ‌‌🇨🇦CA_7002+@WangCai_1 2, server: 134.195.196.206, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦CA_6697+@WangCai_1 2, server: 134.195.196.206, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_5601+@WangCai_1, server: 169.197.141.109, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_5001+@WangCai_1, server: 169.197.141.33, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_8080+@WangCai_1, server: 169.197.141.109, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_8888+@WangCai_1 3, server: 134.195.196.206, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_8008+@WangCai_1, server: 169.197.141.109, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_7001+@WangCai_1, server: 38.91.100.150, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_3306+@WangCai_1, server: 38.91.100.150, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_7307+@WangCai_1 3, server: 134.195.196.19, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: ‌‌🇨🇦CA_9101+@WangCai_1, server: 134.195.196.41, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: ‌‌🇨🇦CA_8118+@WangCai_1 2, server: 134.195.196.206, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: ‌‌🇨🇦CA_6679+@WangCai_1 4, server: 134.195.196.19, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: ‌‌🇨🇦CA_9101+@WangCai_1 2, server: 134.195.196.133, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: ‌‌🇨🇦CA_8888+@WangCai_1 4, server: 134.195.196.19, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_6379+@WangCai_1 2, server: 134.195.196.41, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: ‌‌🇨🇦CA_8091+@WangCai_1 4, server: 134.195.196.19, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: ‌‌🇨🇦CA_5000+@WangCai_1 3, server: 134.195.196.64, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_7002+@WangCai_1 3, server: 134.195.196.16, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦CA_7002+@WangCai_1 4, server: 134.195.196.133, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦CA_5004+@WangCai_1 2, server: 134.195.196.41, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_5000+@WangCai_1 2, server: 169.197.141.15, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_8118+@WangCai_1 2, server: 169.197.141.15, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: ‌‌🇨🇦CA_0443+@WangCai_1 3, server: 134.195.196.64, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ‌‌🇨🇦CA_8008+@WangCai_1 2, server: 134.195.196.133, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_5003+@WangCai_1 2, server: 38.91.100.150, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: ‌‌🇨🇦CA_8882+@WangCai_1, server: 134.195.196.206, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ZZ_255, server: 169.197.141.109, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_7306+@WangCai_1, server: 134.195.196.19, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_9102+@WangCai_1, server: 169.197.141.109, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_5600+@WangCai_1, server: 38.91.100.150, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_5600+@WangCai_1 2, server: 169.197.141.33, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_5500+@WangCai_1 2, server: 169.197.141.15, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_8091+@WangCai_1 5, server: 134.195.196.206, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_5004+@WangCai_1, server: 38.91.100.150, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_6679+@WangCai_1, server: 38.91.100.150, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: ‌‌🇨🇦CA_8882+@WangCai_1 2, server: 134.195.196.19, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ‌‌🇨🇦CA_8881+@WangCai_1, server: 134.195.196.133, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ‌‌🇨🇦CA_8888+@WangCai_1 5, server: 134.195.196.64, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_7002+@WangCai_1 5, server: 134.195.196.41, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦CA_2376+@WangCai_1 2, server: 134.195.196.19, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: ‌‌🇨🇦CA_5600+@WangCai_1 2, server: 134.195.196.16, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_8881+@WangCai_1 2, server: 134.195.196.64, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ‌‌🇨🇦CA_5500+@WangCai_1, server: 134.195.196.64, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_5003+@WangCai_1, server: 134.195.196.19, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: ‌‌🇨🇦CA_5600+@WangCai_1 3, server: 134.195.196.64, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_8882+@WangCai_1 3, server: 134.195.196.41, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ‌‌🇨🇦CA_8119+@WangCai_1 4, server: 134.195.196.19, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: ‌‌🇨🇦CA_6379+@WangCai_1 3, server: 134.195.196.16, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: ‌‌🇨🇦CA_7001+@WangCai_1, server: 134.195.196.206, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_5500+@WangCai_1 3, server: 38.91.100.150, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_8000+@WangCai_1, server: 169.197.141.109, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_6697+@WangCai_1 3, server: 134.195.196.19, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: ZZ_2709, server: 134.195.196.79, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_2375+@WangCai_1, server: 169.197.141.15, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: ‌‌🇨🇦CA_5600+@WangCai_1 4, server: 134.195.196.133, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_2375+@WangCai_1, server: 134.195.196.19, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: ‌‌🇨🇦CA_8008+@WangCai_1 3, server: 134.195.196.64, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ‌‌🇨🇦CA_8090+@WangCai_1 2, server: 134.195.196.64, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: ‌‌🇨🇦CA_8080+@WangCai_1, server: 134.195.196.41, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_8009+@WangCai_1, server: 134.195.196.64, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ‌‌🇨🇦CA_8882+@WangCai_1 4, server: 134.195.196.133, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_5601+@WangCai_1 2, server: 169.197.141.15, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_8882+@WangCai_1 2, server: 169.197.141.15, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ‌‌🇨🇦CA_6697+@WangCai_1 4, server: 134.195.196.133, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_8090+@WangCai_1, server: 169.197.141.109, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: ‌‌🇨🇦CA_5003+@WangCai_1 2, server: 134.195.196.133, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: ‌‌🇨🇦CA_6379+@WangCai_1 4, server: 134.195.196.133, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: ‌‌🇨🇦CA_8009+@WangCai_1 2, server: 134.195.196.41, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ‌‌🇨🇦CA_7002+@WangCai_1 6, server: 134.195.196.19, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_9102+@WangCai_1 2, server: 38.91.100.150, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_7002+@WangCai_1, server: 169.197.141.15, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦CA_8080+@WangCai_1 2, server: 134.195.196.64, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_5601+@WangCai_1, server: 134.195.196.41, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_8119+@WangCai_1, server: 38.91.100.150, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
   - {name: US_1282+|47.13Mb, server: 172.99.190.35, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1287+|46.75Mb, server: 172.99.190.35, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1283+|47.27Mb, server: 172.99.190.35, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1290+|47.28Mb, server: 172.99.190.35, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_1286+|23.16Mb, server: 172.99.190.35, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: ZZ_2619+|+4.57Mb, server: 134.195.196.205, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: CA_05+TG@peekfun, server: 198.57.27.225, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: ZZ_2618+|36.96Mb, server: 134.195.196.205, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_1339+|47.69Mb, server: vui.sysucc.ga, port: 49865, type: trojan, password: MeQVCkMzCg, sni: vui.sysucc.ga, skip-cert-verify: true, udp: true}
+  - {name: ‌‌🇨🇦CA_5000+@WangCai_1 4, server: 134.195.196.206, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_8008+@WangCai_1 4, server: 134.195.196.16, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ‌‌🇨🇦CA_5004+@WangCai_1 3, server: 134.195.196.206, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: ‌‌🇨🇦CA_7001+@WangCai_1 2, server: 134.195.196.41, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦CA_5500+@WangCai_1 2, server: 134.195.196.19, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_5500+@WangCai_1 3, server: 134.195.196.206, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_129, server: 167.88.63.60, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_8888+@WangCai_1, server: 38.91.100.150, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_8881+@WangCai_1 3, server: 134.195.196.206, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ‌‌🇨🇦CA_6379+@WangCai_1 5, server: 134.195.196.19, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: US_7306+@WangCai_1, server: 169.197.141.109, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: ‌‌🇨🇦CA_8881+@WangCai_1 4, server: 134.195.196.41, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_7001+@WangCai_1 2, server: 169.197.141.15, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦CA_8882+@WangCai_1 5, server: 134.195.196.64, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ‌‌🇨🇦CA_5600+@WangCai_1 5, server: 134.195.196.206, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_2375+@WangCai_1 2, server: 38.91.100.150, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: ‌‌🇨🇦CA_7001+@WangCai_1 3, server: 134.195.196.64, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_8009+@WangCai_1 2, server: 38.91.100.150, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ‌‌🇨🇦CA_0443+@WangCai_1 4, server: 134.195.196.206, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_6679+@WangCai_1 2, server: 169.197.141.15, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_127, server: 172.99.190.35, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: CN_346, server: jike-cccn2.jiserver.xyz, port: 39509, type: vmess, uuid: 221828e0-4192-342c-99fc-9a0af6e06823, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike-cccn2.jiserver.xyz}, udp: true}
+  - {name: US_8008+@WangCai_1 2, server: 38.91.100.150, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_8881+@WangCai_1 2, server: 169.197.141.109, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ‌‌🇨🇦CA_7001+@WangCai_1 4, server: 134.195.196.19, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_7002+@WangCai_1 2, server: 169.197.141.33, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _商店：8du.shop 4, server: fs.keaiyun.top, port: 48519, type: vmess, uuid: 6bdb5616-d0ca-3638-8a96-5a70b8ca27a5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_3306+@WangCai_1 2, server: 169.197.141.15, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_8000+@WangCai_1 3, server: 134.195.196.206, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK_719+|20.97Mb
-      - US_1340+|18.57Mb
+      - _商店：8du.shop
+      - _商店：8du.shop 2
+      - CN_342
+      - _商店：8du.shop 3
       - US_1285+|47.15Mb
+      - Relay_🇬🇧GB-🇬🇧GB_17
+      - ‌‌🇨🇦CA_6679+@WangCai_1
+      - ‌‌🇨🇦CA_6679+@WangCai_1 2
+      - _US_美国
+      - US_5003+@WangCai_1
+      - ‌‌🇨🇦CA_8091+@WangCai_1
+      - ‌‌🇨🇦CA_8000+@WangCai_1
+      - ‌‌🇨🇦CA_8091+@WangCai_1 2
+      - ‌‌🇨🇦CA_8091+@WangCai_1 3
+      - ‌‌🇨🇦CA_5000+@WangCai_1
+      - ‌‌🇨🇦CA_9102+@WangCai_1
+      - ‌‌🇨🇦CA_7307+@WangCai_1
+      - ‌‌🇨🇦CA_8000+@WangCai_1 2
+      - ‌‌🇨🇦CA_3389+@WangCai_1
+      - US_8118+@WangCai_1
+      - ‌‌🇨🇦CA_0443+@WangCai_1
+      - US_8009+@WangCai_1
+      - ‌‌🇨🇦CA_8888+@WangCai_1
+      - ‌‌🇨🇦CA_6679+@WangCai_1 3
+      - ‌‌🇨🇦CA_3306+@WangCai_1
+      - ‌‌🇨🇦CA_5000+@WangCai_1 2
+      - ‌‌🇨🇦CA_6379+@WangCai_1
+      - US_9101+@WangCai_1
+      - US_8882+@WangCai_1
+      - ‌‌🇨🇦CA_8119+@WangCai_1
+      - ‌‌🇨🇦CA_7002+@WangCai_1
+      - US_7307+@WangCai_1
+      - US_5000+@WangCai_1
+      - ‌‌🇨🇦CA_5004+@WangCai_1
+      - ‌‌🇨🇦CA_5600+@WangCai_1
+      - ‌‌🇨🇦CA_8008+@WangCai_1
+      - ‌‌🇨🇦CA_8119+@WangCai_1 2
+      - US_0443+@WangCai_1
+      - ‌‌🇨🇦CA_5001+@WangCai_1
+      - ‌‌🇨🇦CA_6697+@WangCai_1
+      - US_5500+@WangCai_1
+      - US_9101+@WangCai_1 2
+      - US_2376+@WangCai_1
+      - ‌‌🇨🇦CA_7307+@WangCai_1 2
+      - US_8881+@WangCai_1
+      - ‌‌🇨🇦CA_2376+@WangCai_1
+      - ‌‌🇨🇦CA_8119+@WangCai_1 3
+      - ‌‌🇨🇦CA_8888+@WangCai_1 2
+      - ZZ_256
+      - ‌‌🇨🇦CA_8118+@WangCai_1
+      - ‌‌🇨🇦CA_8090+@WangCai_1
+      - ‌‌🇨🇦CA_5001+@WangCai_1 2
+      - ‌‌🇨🇦CA_0443+@WangCai_1 2
+      - ‌‌🇨🇦CA_7002+@WangCai_1 2
+      - ‌‌🇨🇦CA_6697+@WangCai_1 2
+      - US_5601+@WangCai_1
+      - US_5001+@WangCai_1
+      - US_8080+@WangCai_1
+      - ‌‌🇨🇦CA_8888+@WangCai_1 3
+      - US_8008+@WangCai_1
+      - US_7001+@WangCai_1
+      - US_3306+@WangCai_1
+      - ‌‌🇨🇦CA_7307+@WangCai_1 3
+      - ‌‌🇨🇦CA_9101+@WangCai_1
+      - ‌‌🇨🇦CA_8118+@WangCai_1 2
+      - ‌‌🇨🇦CA_6679+@WangCai_1 4
+      - ‌‌🇨🇦CA_9101+@WangCai_1 2
+      - ‌‌🇨🇦CA_8888+@WangCai_1 4
+      - ‌‌🇨🇦CA_6379+@WangCai_1 2
+      - ‌‌🇨🇦CA_8091+@WangCai_1 4
+      - ‌‌🇨🇦CA_5000+@WangCai_1 3
+      - ‌‌🇨🇦CA_7002+@WangCai_1 3
+      - ‌‌🇨🇦CA_7002+@WangCai_1 4
+      - ‌‌🇨🇦CA_5004+@WangCai_1 2
+      - US_5000+@WangCai_1 2
+      - US_8118+@WangCai_1 2
+      - ‌‌🇨🇦CA_0443+@WangCai_1 3
+      - ‌‌🇨🇦CA_8008+@WangCai_1 2
+      - US_5003+@WangCai_1 2
+      - ‌‌🇨🇦CA_8882+@WangCai_1
+      - ZZ_255
+      - ‌‌🇨🇦CA_7306+@WangCai_1
+      - US_9102+@WangCai_1
+      - US_5600+@WangCai_1
+      - US_5600+@WangCai_1 2
+      - US_5500+@WangCai_1 2
+      - ‌‌🇨🇦CA_8091+@WangCai_1 5
+      - US_5004+@WangCai_1
+      - US_6679+@WangCai_1
+      - ‌‌🇨🇦CA_8882+@WangCai_1 2
+      - ‌‌🇨🇦CA_8881+@WangCai_1
+      - ‌‌🇨🇦CA_8888+@WangCai_1 5
+      - ‌‌🇨🇦CA_7002+@WangCai_1 5
+      - ‌‌🇨🇦CA_2376+@WangCai_1 2
+      - ‌‌🇨🇦CA_5600+@WangCai_1 2
+      - ‌‌🇨🇦CA_8881+@WangCai_1 2
+      - ‌‌🇨🇦CA_5500+@WangCai_1
+      - ‌‌🇨🇦CA_5003+@WangCai_1
+      - ‌‌🇨🇦CA_5600+@WangCai_1 3
+      - ‌‌🇨🇦CA_8882+@WangCai_1 3
+      - ‌‌🇨🇦CA_8119+@WangCai_1 4
+      - ‌‌🇨🇦CA_6379+@WangCai_1 3
+      - ‌‌🇨🇦CA_7001+@WangCai_1
+      - US_5500+@WangCai_1 3
+      - US_8000+@WangCai_1
+      - ‌‌🇨🇦CA_6697+@WangCai_1 3
+      - ZZ_2709
+      - US_2375+@WangCai_1
+      - ‌‌🇨🇦CA_5600+@WangCai_1 4
+      - ‌‌🇨🇦CA_2375+@WangCai_1
+      - ‌‌🇨🇦CA_8008+@WangCai_1 3
+      - ‌‌🇨🇦CA_8090+@WangCai_1 2
+      - ‌‌🇨🇦CA_8080+@WangCai_1
+      - ‌‌🇨🇦CA_8009+@WangCai_1
+      - ‌‌🇨🇦CA_8882+@WangCai_1 4
+      - US_5601+@WangCai_1 2
+      - US_8882+@WangCai_1 2
+      - ‌‌🇨🇦CA_6697+@WangCai_1 4
+      - US_8090+@WangCai_1
+      - ‌‌🇨🇦CA_5003+@WangCai_1 2
+      - ‌‌🇨🇦CA_6379+@WangCai_1 4
+      - ‌‌🇨🇦CA_8009+@WangCai_1 2
+      - ‌‌🇨🇦CA_7002+@WangCai_1 6
+      - US_9102+@WangCai_1 2
+      - US_7002+@WangCai_1
+      - ‌‌🇨🇦CA_8080+@WangCai_1 2
+      - ‌‌🇨🇦CA_5601+@WangCai_1
+      - US_8119+@WangCai_1
       - US_1282+|47.13Mb
-      - US_1287+|46.75Mb
-      - US_1283+|47.27Mb
-      - US_1290+|47.28Mb
-      - US_1286+|23.16Mb
-      - ZZ_2619+|+4.57Mb
-      - CA_05+TG@peekfun
-      - ZZ_2618+|36.96Mb
-      - US_1339+|47.69Mb
+      - ‌‌🇨🇦CA_5000+@WangCai_1 4
+      - ‌‌🇨🇦CA_8008+@WangCai_1 4
+      - ‌‌🇨🇦CA_5004+@WangCai_1 3
+      - ‌‌🇨🇦CA_7001+@WangCai_1 2
+      - ‌‌🇨🇦CA_5500+@WangCai_1 2
+      - ‌‌🇨🇦CA_5500+@WangCai_1 3
+      - US_129
+      - US_8888+@WangCai_1
+      - ‌‌🇨🇦CA_8881+@WangCai_1 3
+      - ‌‌🇨🇦CA_6379+@WangCai_1 5
+      - US_7306+@WangCai_1
+      - ‌‌🇨🇦CA_8881+@WangCai_1 4
+      - US_7001+@WangCai_1 2
+      - ‌‌🇨🇦CA_8882+@WangCai_1 5
+      - ‌‌🇨🇦CA_5600+@WangCai_1 5
+      - US_2375+@WangCai_1 2
+      - ‌‌🇨🇦CA_7001+@WangCai_1 3
+      - US_8009+@WangCai_1 2
+      - ‌‌🇨🇦CA_0443+@WangCai_1 4
+      - US_6679+@WangCai_1 2
+      - US_127
+      - CN_346
+      - US_8008+@WangCai_1 2
+      - US_8881+@WangCai_1 2
+      - ‌‌🇨🇦CA_7001+@WangCai_1 4
+      - US_7002+@WangCai_1 2
+      - _商店：8du.shop 4
+      - US_3306+@WangCai_1 2
+      - ‌‌🇨🇦CA_8000+@WangCai_1 3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - HK_719+|20.97Mb
-      - US_1340+|18.57Mb
+      - _商店：8du.shop
+      - _商店：8du.shop 2
+      - CN_342
+      - _商店：8du.shop 3
       - US_1285+|47.15Mb
+      - Relay_🇬🇧GB-🇬🇧GB_17
+      - ‌‌🇨🇦CA_6679+@WangCai_1
+      - ‌‌🇨🇦CA_6679+@WangCai_1 2
+      - _US_美国
+      - US_5003+@WangCai_1
+      - ‌‌🇨🇦CA_8091+@WangCai_1
+      - ‌‌🇨🇦CA_8000+@WangCai_1
+      - ‌‌🇨🇦CA_8091+@WangCai_1 2
+      - ‌‌🇨🇦CA_8091+@WangCai_1 3
+      - ‌‌🇨🇦CA_5000+@WangCai_1
+      - ‌‌🇨🇦CA_9102+@WangCai_1
+      - ‌‌🇨🇦CA_7307+@WangCai_1
+      - ‌‌🇨🇦CA_8000+@WangCai_1 2
+      - ‌‌🇨🇦CA_3389+@WangCai_1
+      - US_8118+@WangCai_1
+      - ‌‌🇨🇦CA_0443+@WangCai_1
+      - US_8009+@WangCai_1
+      - ‌‌🇨🇦CA_8888+@WangCai_1
+      - ‌‌🇨🇦CA_6679+@WangCai_1 3
+      - ‌‌🇨🇦CA_3306+@WangCai_1
+      - ‌‌🇨🇦CA_5000+@WangCai_1 2
+      - ‌‌🇨🇦CA_6379+@WangCai_1
+      - US_9101+@WangCai_1
+      - US_8882+@WangCai_1
+      - ‌‌🇨🇦CA_8119+@WangCai_1
+      - ‌‌🇨🇦CA_7002+@WangCai_1
+      - US_7307+@WangCai_1
+      - US_5000+@WangCai_1
+      - ‌‌🇨🇦CA_5004+@WangCai_1
+      - ‌‌🇨🇦CA_5600+@WangCai_1
+      - ‌‌🇨🇦CA_8008+@WangCai_1
+      - ‌‌🇨🇦CA_8119+@WangCai_1 2
+      - US_0443+@WangCai_1
+      - ‌‌🇨🇦CA_5001+@WangCai_1
+      - ‌‌🇨🇦CA_6697+@WangCai_1
+      - US_5500+@WangCai_1
+      - US_9101+@WangCai_1 2
+      - US_2376+@WangCai_1
+      - ‌‌🇨🇦CA_7307+@WangCai_1 2
+      - US_8881+@WangCai_1
+      - ‌‌🇨🇦CA_2376+@WangCai_1
+      - ‌‌🇨🇦CA_8119+@WangCai_1 3
+      - ‌‌🇨🇦CA_8888+@WangCai_1 2
+      - ZZ_256
+      - ‌‌🇨🇦CA_8118+@WangCai_1
+      - ‌‌🇨🇦CA_8090+@WangCai_1
+      - ‌‌🇨🇦CA_5001+@WangCai_1 2
+      - ‌‌🇨🇦CA_0443+@WangCai_1 2
+      - ‌‌🇨🇦CA_7002+@WangCai_1 2
+      - ‌‌🇨🇦CA_6697+@WangCai_1 2
+      - US_5601+@WangCai_1
+      - US_5001+@WangCai_1
+      - US_8080+@WangCai_1
+      - ‌‌🇨🇦CA_8888+@WangCai_1 3
+      - US_8008+@WangCai_1
+      - US_7001+@WangCai_1
+      - US_3306+@WangCai_1
+      - ‌‌🇨🇦CA_7307+@WangCai_1 3
+      - ‌‌🇨🇦CA_9101+@WangCai_1
+      - ‌‌🇨🇦CA_8118+@WangCai_1 2
+      - ‌‌🇨🇦CA_6679+@WangCai_1 4
+      - ‌‌🇨🇦CA_9101+@WangCai_1 2
+      - ‌‌🇨🇦CA_8888+@WangCai_1 4
+      - ‌‌🇨🇦CA_6379+@WangCai_1 2
+      - ‌‌🇨🇦CA_8091+@WangCai_1 4
+      - ‌‌🇨🇦CA_5000+@WangCai_1 3
+      - ‌‌🇨🇦CA_7002+@WangCai_1 3
+      - ‌‌🇨🇦CA_7002+@WangCai_1 4
+      - ‌‌🇨🇦CA_5004+@WangCai_1 2
+      - US_5000+@WangCai_1 2
+      - US_8118+@WangCai_1 2
+      - ‌‌🇨🇦CA_0443+@WangCai_1 3
+      - ‌‌🇨🇦CA_8008+@WangCai_1 2
+      - US_5003+@WangCai_1 2
+      - ‌‌🇨🇦CA_8882+@WangCai_1
+      - ZZ_255
+      - ‌‌🇨🇦CA_7306+@WangCai_1
+      - US_9102+@WangCai_1
+      - US_5600+@WangCai_1
+      - US_5600+@WangCai_1 2
+      - US_5500+@WangCai_1 2
+      - ‌‌🇨🇦CA_8091+@WangCai_1 5
+      - US_5004+@WangCai_1
+      - US_6679+@WangCai_1
+      - ‌‌🇨🇦CA_8882+@WangCai_1 2
+      - ‌‌🇨🇦CA_8881+@WangCai_1
+      - ‌‌🇨🇦CA_8888+@WangCai_1 5
+      - ‌‌🇨🇦CA_7002+@WangCai_1 5
+      - ‌‌🇨🇦CA_2376+@WangCai_1 2
+      - ‌‌🇨🇦CA_5600+@WangCai_1 2
+      - ‌‌🇨🇦CA_8881+@WangCai_1 2
+      - ‌‌🇨🇦CA_5500+@WangCai_1
+      - ‌‌🇨🇦CA_5003+@WangCai_1
+      - ‌‌🇨🇦CA_5600+@WangCai_1 3
+      - ‌‌🇨🇦CA_8882+@WangCai_1 3
+      - ‌‌🇨🇦CA_8119+@WangCai_1 4
+      - ‌‌🇨🇦CA_6379+@WangCai_1 3
+      - ‌‌🇨🇦CA_7001+@WangCai_1
+      - US_5500+@WangCai_1 3
+      - US_8000+@WangCai_1
+      - ‌‌🇨🇦CA_6697+@WangCai_1 3
+      - ZZ_2709
+      - US_2375+@WangCai_1
+      - ‌‌🇨🇦CA_5600+@WangCai_1 4
+      - ‌‌🇨🇦CA_2375+@WangCai_1
+      - ‌‌🇨🇦CA_8008+@WangCai_1 3
+      - ‌‌🇨🇦CA_8090+@WangCai_1 2
+      - ‌‌🇨🇦CA_8080+@WangCai_1
+      - ‌‌🇨🇦CA_8009+@WangCai_1
+      - ‌‌🇨🇦CA_8882+@WangCai_1 4
+      - US_5601+@WangCai_1 2
+      - US_8882+@WangCai_1 2
+      - ‌‌🇨🇦CA_6697+@WangCai_1 4
+      - US_8090+@WangCai_1
+      - ‌‌🇨🇦CA_5003+@WangCai_1 2
+      - ‌‌🇨🇦CA_6379+@WangCai_1 4
+      - ‌‌🇨🇦CA_8009+@WangCai_1 2
+      - ‌‌🇨🇦CA_7002+@WangCai_1 6
+      - US_9102+@WangCai_1 2
+      - US_7002+@WangCai_1
+      - ‌‌🇨🇦CA_8080+@WangCai_1 2
+      - ‌‌🇨🇦CA_5601+@WangCai_1
+      - US_8119+@WangCai_1
       - US_1282+|47.13Mb
-      - US_1287+|46.75Mb
-      - US_1283+|47.27Mb
-      - US_1290+|47.28Mb
-      - US_1286+|23.16Mb
-      - ZZ_2619+|+4.57Mb
-      - CA_05+TG@peekfun
-      - ZZ_2618+|36.96Mb
-      - US_1339+|47.69Mb
+      - ‌‌🇨🇦CA_5000+@WangCai_1 4
+      - ‌‌🇨🇦CA_8008+@WangCai_1 4
+      - ‌‌🇨🇦CA_5004+@WangCai_1 3
+      - ‌‌🇨🇦CA_7001+@WangCai_1 2
+      - ‌‌🇨🇦CA_5500+@WangCai_1 2
+      - ‌‌🇨🇦CA_5500+@WangCai_1 3
+      - US_129
+      - US_8888+@WangCai_1
+      - ‌‌🇨🇦CA_8881+@WangCai_1 3
+      - ‌‌🇨🇦CA_6379+@WangCai_1 5
+      - US_7306+@WangCai_1
+      - ‌‌🇨🇦CA_8881+@WangCai_1 4
+      - US_7001+@WangCai_1 2
+      - ‌‌🇨🇦CA_8882+@WangCai_1 5
+      - ‌‌🇨🇦CA_5600+@WangCai_1 5
+      - US_2375+@WangCai_1 2
+      - ‌‌🇨🇦CA_7001+@WangCai_1 3
+      - US_8009+@WangCai_1 2
+      - ‌‌🇨🇦CA_0443+@WangCai_1 4
+      - US_6679+@WangCai_1 2
+      - US_127
+      - CN_346
+      - US_8008+@WangCai_1 2
+      - US_8881+@WangCai_1 2
+      - ‌‌🇨🇦CA_7001+@WangCai_1 4
+      - US_7002+@WangCai_1 2
+      - _商店：8du.shop 4
+      - US_3306+@WangCai_1 2
+      - ‌‌🇨🇦CA_8000+@WangCai_1 3
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK_719+|20.97Mb
-      - US_1340+|18.57Mb
+      - _商店：8du.shop
+      - _商店：8du.shop 2
+      - CN_342
+      - _商店：8du.shop 3
       - US_1285+|47.15Mb
+      - Relay_🇬🇧GB-🇬🇧GB_17
+      - ‌‌🇨🇦CA_6679+@WangCai_1
+      - ‌‌🇨🇦CA_6679+@WangCai_1 2
+      - _US_美国
+      - US_5003+@WangCai_1
+      - ‌‌🇨🇦CA_8091+@WangCai_1
+      - ‌‌🇨🇦CA_8000+@WangCai_1
+      - ‌‌🇨🇦CA_8091+@WangCai_1 2
+      - ‌‌🇨🇦CA_8091+@WangCai_1 3
+      - ‌‌🇨🇦CA_5000+@WangCai_1
+      - ‌‌🇨🇦CA_9102+@WangCai_1
+      - ‌‌🇨🇦CA_7307+@WangCai_1
+      - ‌‌🇨🇦CA_8000+@WangCai_1 2
+      - ‌‌🇨🇦CA_3389+@WangCai_1
+      - US_8118+@WangCai_1
+      - ‌‌🇨🇦CA_0443+@WangCai_1
+      - US_8009+@WangCai_1
+      - ‌‌🇨🇦CA_8888+@WangCai_1
+      - ‌‌🇨🇦CA_6679+@WangCai_1 3
+      - ‌‌🇨🇦CA_3306+@WangCai_1
+      - ‌‌🇨🇦CA_5000+@WangCai_1 2
+      - ‌‌🇨🇦CA_6379+@WangCai_1
+      - US_9101+@WangCai_1
+      - US_8882+@WangCai_1
+      - ‌‌🇨🇦CA_8119+@WangCai_1
+      - ‌‌🇨🇦CA_7002+@WangCai_1
+      - US_7307+@WangCai_1
+      - US_5000+@WangCai_1
+      - ‌‌🇨🇦CA_5004+@WangCai_1
+      - ‌‌🇨🇦CA_5600+@WangCai_1
+      - ‌‌🇨🇦CA_8008+@WangCai_1
+      - ‌‌🇨🇦CA_8119+@WangCai_1 2
+      - US_0443+@WangCai_1
+      - ‌‌🇨🇦CA_5001+@WangCai_1
+      - ‌‌🇨🇦CA_6697+@WangCai_1
+      - US_5500+@WangCai_1
+      - US_9101+@WangCai_1 2
+      - US_2376+@WangCai_1
+      - ‌‌🇨🇦CA_7307+@WangCai_1 2
+      - US_8881+@WangCai_1
+      - ‌‌🇨🇦CA_2376+@WangCai_1
+      - ‌‌🇨🇦CA_8119+@WangCai_1 3
+      - ‌‌🇨🇦CA_8888+@WangCai_1 2
+      - ZZ_256
+      - ‌‌🇨🇦CA_8118+@WangCai_1
+      - ‌‌🇨🇦CA_8090+@WangCai_1
+      - ‌‌🇨🇦CA_5001+@WangCai_1 2
+      - ‌‌🇨🇦CA_0443+@WangCai_1 2
+      - ‌‌🇨🇦CA_7002+@WangCai_1 2
+      - ‌‌🇨🇦CA_6697+@WangCai_1 2
+      - US_5601+@WangCai_1
+      - US_5001+@WangCai_1
+      - US_8080+@WangCai_1
+      - ‌‌🇨🇦CA_8888+@WangCai_1 3
+      - US_8008+@WangCai_1
+      - US_7001+@WangCai_1
+      - US_3306+@WangCai_1
+      - ‌‌🇨🇦CA_7307+@WangCai_1 3
+      - ‌‌🇨🇦CA_9101+@WangCai_1
+      - ‌‌🇨🇦CA_8118+@WangCai_1 2
+      - ‌‌🇨🇦CA_6679+@WangCai_1 4
+      - ‌‌🇨🇦CA_9101+@WangCai_1 2
+      - ‌‌🇨🇦CA_8888+@WangCai_1 4
+      - ‌‌🇨🇦CA_6379+@WangCai_1 2
+      - ‌‌🇨🇦CA_8091+@WangCai_1 4
+      - ‌‌🇨🇦CA_5000+@WangCai_1 3
+      - ‌‌🇨🇦CA_7002+@WangCai_1 3
+      - ‌‌🇨🇦CA_7002+@WangCai_1 4
+      - ‌‌🇨🇦CA_5004+@WangCai_1 2
+      - US_5000+@WangCai_1 2
+      - US_8118+@WangCai_1 2
+      - ‌‌🇨🇦CA_0443+@WangCai_1 3
+      - ‌‌🇨🇦CA_8008+@WangCai_1 2
+      - US_5003+@WangCai_1 2
+      - ‌‌🇨🇦CA_8882+@WangCai_1
+      - ZZ_255
+      - ‌‌🇨🇦CA_7306+@WangCai_1
+      - US_9102+@WangCai_1
+      - US_5600+@WangCai_1
+      - US_5600+@WangCai_1 2
+      - US_5500+@WangCai_1 2
+      - ‌‌🇨🇦CA_8091+@WangCai_1 5
+      - US_5004+@WangCai_1
+      - US_6679+@WangCai_1
+      - ‌‌🇨🇦CA_8882+@WangCai_1 2
+      - ‌‌🇨🇦CA_8881+@WangCai_1
+      - ‌‌🇨🇦CA_8888+@WangCai_1 5
+      - ‌‌🇨🇦CA_7002+@WangCai_1 5
+      - ‌‌🇨🇦CA_2376+@WangCai_1 2
+      - ‌‌🇨🇦CA_5600+@WangCai_1 2
+      - ‌‌🇨🇦CA_8881+@WangCai_1 2
+      - ‌‌🇨🇦CA_5500+@WangCai_1
+      - ‌‌🇨🇦CA_5003+@WangCai_1
+      - ‌‌🇨🇦CA_5600+@WangCai_1 3
+      - ‌‌🇨🇦CA_8882+@WangCai_1 3
+      - ‌‌🇨🇦CA_8119+@WangCai_1 4
+      - ‌‌🇨🇦CA_6379+@WangCai_1 3
+      - ‌‌🇨🇦CA_7001+@WangCai_1
+      - US_5500+@WangCai_1 3
+      - US_8000+@WangCai_1
+      - ‌‌🇨🇦CA_6697+@WangCai_1 3
+      - ZZ_2709
+      - US_2375+@WangCai_1
+      - ‌‌🇨🇦CA_5600+@WangCai_1 4
+      - ‌‌🇨🇦CA_2375+@WangCai_1
+      - ‌‌🇨🇦CA_8008+@WangCai_1 3
+      - ‌‌🇨🇦CA_8090+@WangCai_1 2
+      - ‌‌🇨🇦CA_8080+@WangCai_1
+      - ‌‌🇨🇦CA_8009+@WangCai_1
+      - ‌‌🇨🇦CA_8882+@WangCai_1 4
+      - US_5601+@WangCai_1 2
+      - US_8882+@WangCai_1 2
+      - ‌‌🇨🇦CA_6697+@WangCai_1 4
+      - US_8090+@WangCai_1
+      - ‌‌🇨🇦CA_5003+@WangCai_1 2
+      - ‌‌🇨🇦CA_6379+@WangCai_1 4
+      - ‌‌🇨🇦CA_8009+@WangCai_1 2
+      - ‌‌🇨🇦CA_7002+@WangCai_1 6
+      - US_9102+@WangCai_1 2
+      - US_7002+@WangCai_1
+      - ‌‌🇨🇦CA_8080+@WangCai_1 2
+      - ‌‌🇨🇦CA_5601+@WangCai_1
+      - US_8119+@WangCai_1
       - US_1282+|47.13Mb
-      - US_1287+|46.75Mb
-      - US_1283+|47.27Mb
-      - US_1290+|47.28Mb
-      - US_1286+|23.16Mb
-      - ZZ_2619+|+4.57Mb
-      - CA_05+TG@peekfun
-      - ZZ_2618+|36.96Mb
-      - US_1339+|47.69Mb
+      - ‌‌🇨🇦CA_5000+@WangCai_1 4
+      - ‌‌🇨🇦CA_8008+@WangCai_1 4
+      - ‌‌🇨🇦CA_5004+@WangCai_1 3
+      - ‌‌🇨🇦CA_7001+@WangCai_1 2
+      - ‌‌🇨🇦CA_5500+@WangCai_1 2
+      - ‌‌🇨🇦CA_5500+@WangCai_1 3
+      - US_129
+      - US_8888+@WangCai_1
+      - ‌‌🇨🇦CA_8881+@WangCai_1 3
+      - ‌‌🇨🇦CA_6379+@WangCai_1 5
+      - US_7306+@WangCai_1
+      - ‌‌🇨🇦CA_8881+@WangCai_1 4
+      - US_7001+@WangCai_1 2
+      - ‌‌🇨🇦CA_8882+@WangCai_1 5
+      - ‌‌🇨🇦CA_5600+@WangCai_1 5
+      - US_2375+@WangCai_1 2
+      - ‌‌🇨🇦CA_7001+@WangCai_1 3
+      - US_8009+@WangCai_1 2
+      - ‌‌🇨🇦CA_0443+@WangCai_1 4
+      - US_6679+@WangCai_1 2
+      - US_127
+      - CN_346
+      - US_8008+@WangCai_1 2
+      - US_8881+@WangCai_1 2
+      - ‌‌🇨🇦CA_7001+@WangCai_1 4
+      - US_7002+@WangCai_1 2
+      - _商店：8du.shop 4
+      - US_3306+@WangCai_1 2
+      - ‌‌🇨🇦CA_8000+@WangCai_1 3
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -88,18 +672,164 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK_719+|20.97Mb
-      - US_1340+|18.57Mb
+      - _商店：8du.shop
+      - _商店：8du.shop 2
+      - CN_342
+      - _商店：8du.shop 3
       - US_1285+|47.15Mb
+      - Relay_🇬🇧GB-🇬🇧GB_17
+      - ‌‌🇨🇦CA_6679+@WangCai_1
+      - ‌‌🇨🇦CA_6679+@WangCai_1 2
+      - _US_美国
+      - US_5003+@WangCai_1
+      - ‌‌🇨🇦CA_8091+@WangCai_1
+      - ‌‌🇨🇦CA_8000+@WangCai_1
+      - ‌‌🇨🇦CA_8091+@WangCai_1 2
+      - ‌‌🇨🇦CA_8091+@WangCai_1 3
+      - ‌‌🇨🇦CA_5000+@WangCai_1
+      - ‌‌🇨🇦CA_9102+@WangCai_1
+      - ‌‌🇨🇦CA_7307+@WangCai_1
+      - ‌‌🇨🇦CA_8000+@WangCai_1 2
+      - ‌‌🇨🇦CA_3389+@WangCai_1
+      - US_8118+@WangCai_1
+      - ‌‌🇨🇦CA_0443+@WangCai_1
+      - US_8009+@WangCai_1
+      - ‌‌🇨🇦CA_8888+@WangCai_1
+      - ‌‌🇨🇦CA_6679+@WangCai_1 3
+      - ‌‌🇨🇦CA_3306+@WangCai_1
+      - ‌‌🇨🇦CA_5000+@WangCai_1 2
+      - ‌‌🇨🇦CA_6379+@WangCai_1
+      - US_9101+@WangCai_1
+      - US_8882+@WangCai_1
+      - ‌‌🇨🇦CA_8119+@WangCai_1
+      - ‌‌🇨🇦CA_7002+@WangCai_1
+      - US_7307+@WangCai_1
+      - US_5000+@WangCai_1
+      - ‌‌🇨🇦CA_5004+@WangCai_1
+      - ‌‌🇨🇦CA_5600+@WangCai_1
+      - ‌‌🇨🇦CA_8008+@WangCai_1
+      - ‌‌🇨🇦CA_8119+@WangCai_1 2
+      - US_0443+@WangCai_1
+      - ‌‌🇨🇦CA_5001+@WangCai_1
+      - ‌‌🇨🇦CA_6697+@WangCai_1
+      - US_5500+@WangCai_1
+      - US_9101+@WangCai_1 2
+      - US_2376+@WangCai_1
+      - ‌‌🇨🇦CA_7307+@WangCai_1 2
+      - US_8881+@WangCai_1
+      - ‌‌🇨🇦CA_2376+@WangCai_1
+      - ‌‌🇨🇦CA_8119+@WangCai_1 3
+      - ‌‌🇨🇦CA_8888+@WangCai_1 2
+      - ZZ_256
+      - ‌‌🇨🇦CA_8118+@WangCai_1
+      - ‌‌🇨🇦CA_8090+@WangCai_1
+      - ‌‌🇨🇦CA_5001+@WangCai_1 2
+      - ‌‌🇨🇦CA_0443+@WangCai_1 2
+      - ‌‌🇨🇦CA_7002+@WangCai_1 2
+      - ‌‌🇨🇦CA_6697+@WangCai_1 2
+      - US_5601+@WangCai_1
+      - US_5001+@WangCai_1
+      - US_8080+@WangCai_1
+      - ‌‌🇨🇦CA_8888+@WangCai_1 3
+      - US_8008+@WangCai_1
+      - US_7001+@WangCai_1
+      - US_3306+@WangCai_1
+      - ‌‌🇨🇦CA_7307+@WangCai_1 3
+      - ‌‌🇨🇦CA_9101+@WangCai_1
+      - ‌‌🇨🇦CA_8118+@WangCai_1 2
+      - ‌‌🇨🇦CA_6679+@WangCai_1 4
+      - ‌‌🇨🇦CA_9101+@WangCai_1 2
+      - ‌‌🇨🇦CA_8888+@WangCai_1 4
+      - ‌‌🇨🇦CA_6379+@WangCai_1 2
+      - ‌‌🇨🇦CA_8091+@WangCai_1 4
+      - ‌‌🇨🇦CA_5000+@WangCai_1 3
+      - ‌‌🇨🇦CA_7002+@WangCai_1 3
+      - ‌‌🇨🇦CA_7002+@WangCai_1 4
+      - ‌‌🇨🇦CA_5004+@WangCai_1 2
+      - US_5000+@WangCai_1 2
+      - US_8118+@WangCai_1 2
+      - ‌‌🇨🇦CA_0443+@WangCai_1 3
+      - ‌‌🇨🇦CA_8008+@WangCai_1 2
+      - US_5003+@WangCai_1 2
+      - ‌‌🇨🇦CA_8882+@WangCai_1
+      - ZZ_255
+      - ‌‌🇨🇦CA_7306+@WangCai_1
+      - US_9102+@WangCai_1
+      - US_5600+@WangCai_1
+      - US_5600+@WangCai_1 2
+      - US_5500+@WangCai_1 2
+      - ‌‌🇨🇦CA_8091+@WangCai_1 5
+      - US_5004+@WangCai_1
+      - US_6679+@WangCai_1
+      - ‌‌🇨🇦CA_8882+@WangCai_1 2
+      - ‌‌🇨🇦CA_8881+@WangCai_1
+      - ‌‌🇨🇦CA_8888+@WangCai_1 5
+      - ‌‌🇨🇦CA_7002+@WangCai_1 5
+      - ‌‌🇨🇦CA_2376+@WangCai_1 2
+      - ‌‌🇨🇦CA_5600+@WangCai_1 2
+      - ‌‌🇨🇦CA_8881+@WangCai_1 2
+      - ‌‌🇨🇦CA_5500+@WangCai_1
+      - ‌‌🇨🇦CA_5003+@WangCai_1
+      - ‌‌🇨🇦CA_5600+@WangCai_1 3
+      - ‌‌🇨🇦CA_8882+@WangCai_1 3
+      - ‌‌🇨🇦CA_8119+@WangCai_1 4
+      - ‌‌🇨🇦CA_6379+@WangCai_1 3
+      - ‌‌🇨🇦CA_7001+@WangCai_1
+      - US_5500+@WangCai_1 3
+      - US_8000+@WangCai_1
+      - ‌‌🇨🇦CA_6697+@WangCai_1 3
+      - ZZ_2709
+      - US_2375+@WangCai_1
+      - ‌‌🇨🇦CA_5600+@WangCai_1 4
+      - ‌‌🇨🇦CA_2375+@WangCai_1
+      - ‌‌🇨🇦CA_8008+@WangCai_1 3
+      - ‌‌🇨🇦CA_8090+@WangCai_1 2
+      - ‌‌🇨🇦CA_8080+@WangCai_1
+      - ‌‌🇨🇦CA_8009+@WangCai_1
+      - ‌‌🇨🇦CA_8882+@WangCai_1 4
+      - US_5601+@WangCai_1 2
+      - US_8882+@WangCai_1 2
+      - ‌‌🇨🇦CA_6697+@WangCai_1 4
+      - US_8090+@WangCai_1
+      - ‌‌🇨🇦CA_5003+@WangCai_1 2
+      - ‌‌🇨🇦CA_6379+@WangCai_1 4
+      - ‌‌🇨🇦CA_8009+@WangCai_1 2
+      - ‌‌🇨🇦CA_7002+@WangCai_1 6
+      - US_9102+@WangCai_1 2
+      - US_7002+@WangCai_1
+      - ‌‌🇨🇦CA_8080+@WangCai_1 2
+      - ‌‌🇨🇦CA_5601+@WangCai_1
+      - US_8119+@WangCai_1
       - US_1282+|47.13Mb
-      - US_1287+|46.75Mb
-      - US_1283+|47.27Mb
-      - US_1290+|47.28Mb
-      - US_1286+|23.16Mb
-      - ZZ_2619+|+4.57Mb
-      - CA_05+TG@peekfun
-      - ZZ_2618+|36.96Mb
-      - US_1339+|47.69Mb
+      - ‌‌🇨🇦CA_5000+@WangCai_1 4
+      - ‌‌🇨🇦CA_8008+@WangCai_1 4
+      - ‌‌🇨🇦CA_5004+@WangCai_1 3
+      - ‌‌🇨🇦CA_7001+@WangCai_1 2
+      - ‌‌🇨🇦CA_5500+@WangCai_1 2
+      - ‌‌🇨🇦CA_5500+@WangCai_1 3
+      - US_129
+      - US_8888+@WangCai_1
+      - ‌‌🇨🇦CA_8881+@WangCai_1 3
+      - ‌‌🇨🇦CA_6379+@WangCai_1 5
+      - US_7306+@WangCai_1
+      - ‌‌🇨🇦CA_8881+@WangCai_1 4
+      - US_7001+@WangCai_1 2
+      - ‌‌🇨🇦CA_8882+@WangCai_1 5
+      - ‌‌🇨🇦CA_5600+@WangCai_1 5
+      - US_2375+@WangCai_1 2
+      - ‌‌🇨🇦CA_7001+@WangCai_1 3
+      - US_8009+@WangCai_1 2
+      - ‌‌🇨🇦CA_0443+@WangCai_1 4
+      - US_6679+@WangCai_1 2
+      - US_127
+      - CN_346
+      - US_8008+@WangCai_1 2
+      - US_8881+@WangCai_1 2
+      - ‌‌🇨🇦CA_7001+@WangCai_1 4
+      - US_7002+@WangCai_1 2
+      - _商店：8du.shop 4
+      - US_3306+@WangCai_1 2
+      - ‌‌🇨🇦CA_8000+@WangCai_1 3
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -110,53 +840,491 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - HK_719+|20.97Mb
-      - US_1340+|18.57Mb
+      - _商店：8du.shop
+      - _商店：8du.shop 2
+      - CN_342
+      - _商店：8du.shop 3
       - US_1285+|47.15Mb
+      - Relay_🇬🇧GB-🇬🇧GB_17
+      - ‌‌🇨🇦CA_6679+@WangCai_1
+      - ‌‌🇨🇦CA_6679+@WangCai_1 2
+      - _US_美国
+      - US_5003+@WangCai_1
+      - ‌‌🇨🇦CA_8091+@WangCai_1
+      - ‌‌🇨🇦CA_8000+@WangCai_1
+      - ‌‌🇨🇦CA_8091+@WangCai_1 2
+      - ‌‌🇨🇦CA_8091+@WangCai_1 3
+      - ‌‌🇨🇦CA_5000+@WangCai_1
+      - ‌‌🇨🇦CA_9102+@WangCai_1
+      - ‌‌🇨🇦CA_7307+@WangCai_1
+      - ‌‌🇨🇦CA_8000+@WangCai_1 2
+      - ‌‌🇨🇦CA_3389+@WangCai_1
+      - US_8118+@WangCai_1
+      - ‌‌🇨🇦CA_0443+@WangCai_1
+      - US_8009+@WangCai_1
+      - ‌‌🇨🇦CA_8888+@WangCai_1
+      - ‌‌🇨🇦CA_6679+@WangCai_1 3
+      - ‌‌🇨🇦CA_3306+@WangCai_1
+      - ‌‌🇨🇦CA_5000+@WangCai_1 2
+      - ‌‌🇨🇦CA_6379+@WangCai_1
+      - US_9101+@WangCai_1
+      - US_8882+@WangCai_1
+      - ‌‌🇨🇦CA_8119+@WangCai_1
+      - ‌‌🇨🇦CA_7002+@WangCai_1
+      - US_7307+@WangCai_1
+      - US_5000+@WangCai_1
+      - ‌‌🇨🇦CA_5004+@WangCai_1
+      - ‌‌🇨🇦CA_5600+@WangCai_1
+      - ‌‌🇨🇦CA_8008+@WangCai_1
+      - ‌‌🇨🇦CA_8119+@WangCai_1 2
+      - US_0443+@WangCai_1
+      - ‌‌🇨🇦CA_5001+@WangCai_1
+      - ‌‌🇨🇦CA_6697+@WangCai_1
+      - US_5500+@WangCai_1
+      - US_9101+@WangCai_1 2
+      - US_2376+@WangCai_1
+      - ‌‌🇨🇦CA_7307+@WangCai_1 2
+      - US_8881+@WangCai_1
+      - ‌‌🇨🇦CA_2376+@WangCai_1
+      - ‌‌🇨🇦CA_8119+@WangCai_1 3
+      - ‌‌🇨🇦CA_8888+@WangCai_1 2
+      - ZZ_256
+      - ‌‌🇨🇦CA_8118+@WangCai_1
+      - ‌‌🇨🇦CA_8090+@WangCai_1
+      - ‌‌🇨🇦CA_5001+@WangCai_1 2
+      - ‌‌🇨🇦CA_0443+@WangCai_1 2
+      - ‌‌🇨🇦CA_7002+@WangCai_1 2
+      - ‌‌🇨🇦CA_6697+@WangCai_1 2
+      - US_5601+@WangCai_1
+      - US_5001+@WangCai_1
+      - US_8080+@WangCai_1
+      - ‌‌🇨🇦CA_8888+@WangCai_1 3
+      - US_8008+@WangCai_1
+      - US_7001+@WangCai_1
+      - US_3306+@WangCai_1
+      - ‌‌🇨🇦CA_7307+@WangCai_1 3
+      - ‌‌🇨🇦CA_9101+@WangCai_1
+      - ‌‌🇨🇦CA_8118+@WangCai_1 2
+      - ‌‌🇨🇦CA_6679+@WangCai_1 4
+      - ‌‌🇨🇦CA_9101+@WangCai_1 2
+      - ‌‌🇨🇦CA_8888+@WangCai_1 4
+      - ‌‌🇨🇦CA_6379+@WangCai_1 2
+      - ‌‌🇨🇦CA_8091+@WangCai_1 4
+      - ‌‌🇨🇦CA_5000+@WangCai_1 3
+      - ‌‌🇨🇦CA_7002+@WangCai_1 3
+      - ‌‌🇨🇦CA_7002+@WangCai_1 4
+      - ‌‌🇨🇦CA_5004+@WangCai_1 2
+      - US_5000+@WangCai_1 2
+      - US_8118+@WangCai_1 2
+      - ‌‌🇨🇦CA_0443+@WangCai_1 3
+      - ‌‌🇨🇦CA_8008+@WangCai_1 2
+      - US_5003+@WangCai_1 2
+      - ‌‌🇨🇦CA_8882+@WangCai_1
+      - ZZ_255
+      - ‌‌🇨🇦CA_7306+@WangCai_1
+      - US_9102+@WangCai_1
+      - US_5600+@WangCai_1
+      - US_5600+@WangCai_1 2
+      - US_5500+@WangCai_1 2
+      - ‌‌🇨🇦CA_8091+@WangCai_1 5
+      - US_5004+@WangCai_1
+      - US_6679+@WangCai_1
+      - ‌‌🇨🇦CA_8882+@WangCai_1 2
+      - ‌‌🇨🇦CA_8881+@WangCai_1
+      - ‌‌🇨🇦CA_8888+@WangCai_1 5
+      - ‌‌🇨🇦CA_7002+@WangCai_1 5
+      - ‌‌🇨🇦CA_2376+@WangCai_1 2
+      - ‌‌🇨🇦CA_5600+@WangCai_1 2
+      - ‌‌🇨🇦CA_8881+@WangCai_1 2
+      - ‌‌🇨🇦CA_5500+@WangCai_1
+      - ‌‌🇨🇦CA_5003+@WangCai_1
+      - ‌‌🇨🇦CA_5600+@WangCai_1 3
+      - ‌‌🇨🇦CA_8882+@WangCai_1 3
+      - ‌‌🇨🇦CA_8119+@WangCai_1 4
+      - ‌‌🇨🇦CA_6379+@WangCai_1 3
+      - ‌‌🇨🇦CA_7001+@WangCai_1
+      - US_5500+@WangCai_1 3
+      - US_8000+@WangCai_1
+      - ‌‌🇨🇦CA_6697+@WangCai_1 3
+      - ZZ_2709
+      - US_2375+@WangCai_1
+      - ‌‌🇨🇦CA_5600+@WangCai_1 4
+      - ‌‌🇨🇦CA_2375+@WangCai_1
+      - ‌‌🇨🇦CA_8008+@WangCai_1 3
+      - ‌‌🇨🇦CA_8090+@WangCai_1 2
+      - ‌‌🇨🇦CA_8080+@WangCai_1
+      - ‌‌🇨🇦CA_8009+@WangCai_1
+      - ‌‌🇨🇦CA_8882+@WangCai_1 4
+      - US_5601+@WangCai_1 2
+      - US_8882+@WangCai_1 2
+      - ‌‌🇨🇦CA_6697+@WangCai_1 4
+      - US_8090+@WangCai_1
+      - ‌‌🇨🇦CA_5003+@WangCai_1 2
+      - ‌‌🇨🇦CA_6379+@WangCai_1 4
+      - ‌‌🇨🇦CA_8009+@WangCai_1 2
+      - ‌‌🇨🇦CA_7002+@WangCai_1 6
+      - US_9102+@WangCai_1 2
+      - US_7002+@WangCai_1
+      - ‌‌🇨🇦CA_8080+@WangCai_1 2
+      - ‌‌🇨🇦CA_5601+@WangCai_1
+      - US_8119+@WangCai_1
       - US_1282+|47.13Mb
-      - US_1287+|46.75Mb
-      - US_1283+|47.27Mb
-      - US_1290+|47.28Mb
-      - US_1286+|23.16Mb
-      - ZZ_2619+|+4.57Mb
-      - CA_05+TG@peekfun
-      - ZZ_2618+|36.96Mb
-      - US_1339+|47.69Mb
+      - ‌‌🇨🇦CA_5000+@WangCai_1 4
+      - ‌‌🇨🇦CA_8008+@WangCai_1 4
+      - ‌‌🇨🇦CA_5004+@WangCai_1 3
+      - ‌‌🇨🇦CA_7001+@WangCai_1 2
+      - ‌‌🇨🇦CA_5500+@WangCai_1 2
+      - ‌‌🇨🇦CA_5500+@WangCai_1 3
+      - US_129
+      - US_8888+@WangCai_1
+      - ‌‌🇨🇦CA_8881+@WangCai_1 3
+      - ‌‌🇨🇦CA_6379+@WangCai_1 5
+      - US_7306+@WangCai_1
+      - ‌‌🇨🇦CA_8881+@WangCai_1 4
+      - US_7001+@WangCai_1 2
+      - ‌‌🇨🇦CA_8882+@WangCai_1 5
+      - ‌‌🇨🇦CA_5600+@WangCai_1 5
+      - US_2375+@WangCai_1 2
+      - ‌‌🇨🇦CA_7001+@WangCai_1 3
+      - US_8009+@WangCai_1 2
+      - ‌‌🇨🇦CA_0443+@WangCai_1 4
+      - US_6679+@WangCai_1 2
+      - US_127
+      - CN_346
+      - US_8008+@WangCai_1 2
+      - US_8881+@WangCai_1 2
+      - ‌‌🇨🇦CA_7001+@WangCai_1 4
+      - US_7002+@WangCai_1 2
+      - _商店：8du.shop 4
+      - US_3306+@WangCai_1 2
+      - ‌‌🇨🇦CA_8000+@WangCai_1 3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - HK_719+|20.97Mb
-      - US_1340+|18.57Mb
+      - _商店：8du.shop
+      - _商店：8du.shop 2
+      - CN_342
+      - _商店：8du.shop 3
       - US_1285+|47.15Mb
+      - Relay_🇬🇧GB-🇬🇧GB_17
+      - ‌‌🇨🇦CA_6679+@WangCai_1
+      - ‌‌🇨🇦CA_6679+@WangCai_1 2
+      - _US_美国
+      - US_5003+@WangCai_1
+      - ‌‌🇨🇦CA_8091+@WangCai_1
+      - ‌‌🇨🇦CA_8000+@WangCai_1
+      - ‌‌🇨🇦CA_8091+@WangCai_1 2
+      - ‌‌🇨🇦CA_8091+@WangCai_1 3
+      - ‌‌🇨🇦CA_5000+@WangCai_1
+      - ‌‌🇨🇦CA_9102+@WangCai_1
+      - ‌‌🇨🇦CA_7307+@WangCai_1
+      - ‌‌🇨🇦CA_8000+@WangCai_1 2
+      - ‌‌🇨🇦CA_3389+@WangCai_1
+      - US_8118+@WangCai_1
+      - ‌‌🇨🇦CA_0443+@WangCai_1
+      - US_8009+@WangCai_1
+      - ‌‌🇨🇦CA_8888+@WangCai_1
+      - ‌‌🇨🇦CA_6679+@WangCai_1 3
+      - ‌‌🇨🇦CA_3306+@WangCai_1
+      - ‌‌🇨🇦CA_5000+@WangCai_1 2
+      - ‌‌🇨🇦CA_6379+@WangCai_1
+      - US_9101+@WangCai_1
+      - US_8882+@WangCai_1
+      - ‌‌🇨🇦CA_8119+@WangCai_1
+      - ‌‌🇨🇦CA_7002+@WangCai_1
+      - US_7307+@WangCai_1
+      - US_5000+@WangCai_1
+      - ‌‌🇨🇦CA_5004+@WangCai_1
+      - ‌‌🇨🇦CA_5600+@WangCai_1
+      - ‌‌🇨🇦CA_8008+@WangCai_1
+      - ‌‌🇨🇦CA_8119+@WangCai_1 2
+      - US_0443+@WangCai_1
+      - ‌‌🇨🇦CA_5001+@WangCai_1
+      - ‌‌🇨🇦CA_6697+@WangCai_1
+      - US_5500+@WangCai_1
+      - US_9101+@WangCai_1 2
+      - US_2376+@WangCai_1
+      - ‌‌🇨🇦CA_7307+@WangCai_1 2
+      - US_8881+@WangCai_1
+      - ‌‌🇨🇦CA_2376+@WangCai_1
+      - ‌‌🇨🇦CA_8119+@WangCai_1 3
+      - ‌‌🇨🇦CA_8888+@WangCai_1 2
+      - ZZ_256
+      - ‌‌🇨🇦CA_8118+@WangCai_1
+      - ‌‌🇨🇦CA_8090+@WangCai_1
+      - ‌‌🇨🇦CA_5001+@WangCai_1 2
+      - ‌‌🇨🇦CA_0443+@WangCai_1 2
+      - ‌‌🇨🇦CA_7002+@WangCai_1 2
+      - ‌‌🇨🇦CA_6697+@WangCai_1 2
+      - US_5601+@WangCai_1
+      - US_5001+@WangCai_1
+      - US_8080+@WangCai_1
+      - ‌‌🇨🇦CA_8888+@WangCai_1 3
+      - US_8008+@WangCai_1
+      - US_7001+@WangCai_1
+      - US_3306+@WangCai_1
+      - ‌‌🇨🇦CA_7307+@WangCai_1 3
+      - ‌‌🇨🇦CA_9101+@WangCai_1
+      - ‌‌🇨🇦CA_8118+@WangCai_1 2
+      - ‌‌🇨🇦CA_6679+@WangCai_1 4
+      - ‌‌🇨🇦CA_9101+@WangCai_1 2
+      - ‌‌🇨🇦CA_8888+@WangCai_1 4
+      - ‌‌🇨🇦CA_6379+@WangCai_1 2
+      - ‌‌🇨🇦CA_8091+@WangCai_1 4
+      - ‌‌🇨🇦CA_5000+@WangCai_1 3
+      - ‌‌🇨🇦CA_7002+@WangCai_1 3
+      - ‌‌🇨🇦CA_7002+@WangCai_1 4
+      - ‌‌🇨🇦CA_5004+@WangCai_1 2
+      - US_5000+@WangCai_1 2
+      - US_8118+@WangCai_1 2
+      - ‌‌🇨🇦CA_0443+@WangCai_1 3
+      - ‌‌🇨🇦CA_8008+@WangCai_1 2
+      - US_5003+@WangCai_1 2
+      - ‌‌🇨🇦CA_8882+@WangCai_1
+      - ZZ_255
+      - ‌‌🇨🇦CA_7306+@WangCai_1
+      - US_9102+@WangCai_1
+      - US_5600+@WangCai_1
+      - US_5600+@WangCai_1 2
+      - US_5500+@WangCai_1 2
+      - ‌‌🇨🇦CA_8091+@WangCai_1 5
+      - US_5004+@WangCai_1
+      - US_6679+@WangCai_1
+      - ‌‌🇨🇦CA_8882+@WangCai_1 2
+      - ‌‌🇨🇦CA_8881+@WangCai_1
+      - ‌‌🇨🇦CA_8888+@WangCai_1 5
+      - ‌‌🇨🇦CA_7002+@WangCai_1 5
+      - ‌‌🇨🇦CA_2376+@WangCai_1 2
+      - ‌‌🇨🇦CA_5600+@WangCai_1 2
+      - ‌‌🇨🇦CA_8881+@WangCai_1 2
+      - ‌‌🇨🇦CA_5500+@WangCai_1
+      - ‌‌🇨🇦CA_5003+@WangCai_1
+      - ‌‌🇨🇦CA_5600+@WangCai_1 3
+      - ‌‌🇨🇦CA_8882+@WangCai_1 3
+      - ‌‌🇨🇦CA_8119+@WangCai_1 4
+      - ‌‌🇨🇦CA_6379+@WangCai_1 3
+      - ‌‌🇨🇦CA_7001+@WangCai_1
+      - US_5500+@WangCai_1 3
+      - US_8000+@WangCai_1
+      - ‌‌🇨🇦CA_6697+@WangCai_1 3
+      - ZZ_2709
+      - US_2375+@WangCai_1
+      - ‌‌🇨🇦CA_5600+@WangCai_1 4
+      - ‌‌🇨🇦CA_2375+@WangCai_1
+      - ‌‌🇨🇦CA_8008+@WangCai_1 3
+      - ‌‌🇨🇦CA_8090+@WangCai_1 2
+      - ‌‌🇨🇦CA_8080+@WangCai_1
+      - ‌‌🇨🇦CA_8009+@WangCai_1
+      - ‌‌🇨🇦CA_8882+@WangCai_1 4
+      - US_5601+@WangCai_1 2
+      - US_8882+@WangCai_1 2
+      - ‌‌🇨🇦CA_6697+@WangCai_1 4
+      - US_8090+@WangCai_1
+      - ‌‌🇨🇦CA_5003+@WangCai_1 2
+      - ‌‌🇨🇦CA_6379+@WangCai_1 4
+      - ‌‌🇨🇦CA_8009+@WangCai_1 2
+      - ‌‌🇨🇦CA_7002+@WangCai_1 6
+      - US_9102+@WangCai_1 2
+      - US_7002+@WangCai_1
+      - ‌‌🇨🇦CA_8080+@WangCai_1 2
+      - ‌‌🇨🇦CA_5601+@WangCai_1
+      - US_8119+@WangCai_1
       - US_1282+|47.13Mb
-      - US_1287+|46.75Mb
-      - US_1283+|47.27Mb
-      - US_1290+|47.28Mb
-      - US_1286+|23.16Mb
-      - ZZ_2619+|+4.57Mb
-      - CA_05+TG@peekfun
-      - ZZ_2618+|36.96Mb
-      - US_1339+|47.69Mb
+      - ‌‌🇨🇦CA_5000+@WangCai_1 4
+      - ‌‌🇨🇦CA_8008+@WangCai_1 4
+      - ‌‌🇨🇦CA_5004+@WangCai_1 3
+      - ‌‌🇨🇦CA_7001+@WangCai_1 2
+      - ‌‌🇨🇦CA_5500+@WangCai_1 2
+      - ‌‌🇨🇦CA_5500+@WangCai_1 3
+      - US_129
+      - US_8888+@WangCai_1
+      - ‌‌🇨🇦CA_8881+@WangCai_1 3
+      - ‌‌🇨🇦CA_6379+@WangCai_1 5
+      - US_7306+@WangCai_1
+      - ‌‌🇨🇦CA_8881+@WangCai_1 4
+      - US_7001+@WangCai_1 2
+      - ‌‌🇨🇦CA_8882+@WangCai_1 5
+      - ‌‌🇨🇦CA_5600+@WangCai_1 5
+      - US_2375+@WangCai_1 2
+      - ‌‌🇨🇦CA_7001+@WangCai_1 3
+      - US_8009+@WangCai_1 2
+      - ‌‌🇨🇦CA_0443+@WangCai_1 4
+      - US_6679+@WangCai_1 2
+      - US_127
+      - CN_346
+      - US_8008+@WangCai_1 2
+      - US_8881+@WangCai_1 2
+      - ‌‌🇨🇦CA_7001+@WangCai_1 4
+      - US_7002+@WangCai_1 2
+      - _商店：8du.shop 4
+      - US_3306+@WangCai_1 2
+      - ‌‌🇨🇦CA_8000+@WangCai_1 3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK_719+|20.97Mb
-      - US_1340+|18.57Mb
+      - _商店：8du.shop
+      - _商店：8du.shop 2
+      - CN_342
+      - _商店：8du.shop 3
       - US_1285+|47.15Mb
+      - Relay_🇬🇧GB-🇬🇧GB_17
+      - ‌‌🇨🇦CA_6679+@WangCai_1
+      - ‌‌🇨🇦CA_6679+@WangCai_1 2
+      - _US_美国
+      - US_5003+@WangCai_1
+      - ‌‌🇨🇦CA_8091+@WangCai_1
+      - ‌‌🇨🇦CA_8000+@WangCai_1
+      - ‌‌🇨🇦CA_8091+@WangCai_1 2
+      - ‌‌🇨🇦CA_8091+@WangCai_1 3
+      - ‌‌🇨🇦CA_5000+@WangCai_1
+      - ‌‌🇨🇦CA_9102+@WangCai_1
+      - ‌‌🇨🇦CA_7307+@WangCai_1
+      - ‌‌🇨🇦CA_8000+@WangCai_1 2
+      - ‌‌🇨🇦CA_3389+@WangCai_1
+      - US_8118+@WangCai_1
+      - ‌‌🇨🇦CA_0443+@WangCai_1
+      - US_8009+@WangCai_1
+      - ‌‌🇨🇦CA_8888+@WangCai_1
+      - ‌‌🇨🇦CA_6679+@WangCai_1 3
+      - ‌‌🇨🇦CA_3306+@WangCai_1
+      - ‌‌🇨🇦CA_5000+@WangCai_1 2
+      - ‌‌🇨🇦CA_6379+@WangCai_1
+      - US_9101+@WangCai_1
+      - US_8882+@WangCai_1
+      - ‌‌🇨🇦CA_8119+@WangCai_1
+      - ‌‌🇨🇦CA_7002+@WangCai_1
+      - US_7307+@WangCai_1
+      - US_5000+@WangCai_1
+      - ‌‌🇨🇦CA_5004+@WangCai_1
+      - ‌‌🇨🇦CA_5600+@WangCai_1
+      - ‌‌🇨🇦CA_8008+@WangCai_1
+      - ‌‌🇨🇦CA_8119+@WangCai_1 2
+      - US_0443+@WangCai_1
+      - ‌‌🇨🇦CA_5001+@WangCai_1
+      - ‌‌🇨🇦CA_6697+@WangCai_1
+      - US_5500+@WangCai_1
+      - US_9101+@WangCai_1 2
+      - US_2376+@WangCai_1
+      - ‌‌🇨🇦CA_7307+@WangCai_1 2
+      - US_8881+@WangCai_1
+      - ‌‌🇨🇦CA_2376+@WangCai_1
+      - ‌‌🇨🇦CA_8119+@WangCai_1 3
+      - ‌‌🇨🇦CA_8888+@WangCai_1 2
+      - ZZ_256
+      - ‌‌🇨🇦CA_8118+@WangCai_1
+      - ‌‌🇨🇦CA_8090+@WangCai_1
+      - ‌‌🇨🇦CA_5001+@WangCai_1 2
+      - ‌‌🇨🇦CA_0443+@WangCai_1 2
+      - ‌‌🇨🇦CA_7002+@WangCai_1 2
+      - ‌‌🇨🇦CA_6697+@WangCai_1 2
+      - US_5601+@WangCai_1
+      - US_5001+@WangCai_1
+      - US_8080+@WangCai_1
+      - ‌‌🇨🇦CA_8888+@WangCai_1 3
+      - US_8008+@WangCai_1
+      - US_7001+@WangCai_1
+      - US_3306+@WangCai_1
+      - ‌‌🇨🇦CA_7307+@WangCai_1 3
+      - ‌‌🇨🇦CA_9101+@WangCai_1
+      - ‌‌🇨🇦CA_8118+@WangCai_1 2
+      - ‌‌🇨🇦CA_6679+@WangCai_1 4
+      - ‌‌🇨🇦CA_9101+@WangCai_1 2
+      - ‌‌🇨🇦CA_8888+@WangCai_1 4
+      - ‌‌🇨🇦CA_6379+@WangCai_1 2
+      - ‌‌🇨🇦CA_8091+@WangCai_1 4
+      - ‌‌🇨🇦CA_5000+@WangCai_1 3
+      - ‌‌🇨🇦CA_7002+@WangCai_1 3
+      - ‌‌🇨🇦CA_7002+@WangCai_1 4
+      - ‌‌🇨🇦CA_5004+@WangCai_1 2
+      - US_5000+@WangCai_1 2
+      - US_8118+@WangCai_1 2
+      - ‌‌🇨🇦CA_0443+@WangCai_1 3
+      - ‌‌🇨🇦CA_8008+@WangCai_1 2
+      - US_5003+@WangCai_1 2
+      - ‌‌🇨🇦CA_8882+@WangCai_1
+      - ZZ_255
+      - ‌‌🇨🇦CA_7306+@WangCai_1
+      - US_9102+@WangCai_1
+      - US_5600+@WangCai_1
+      - US_5600+@WangCai_1 2
+      - US_5500+@WangCai_1 2
+      - ‌‌🇨🇦CA_8091+@WangCai_1 5
+      - US_5004+@WangCai_1
+      - US_6679+@WangCai_1
+      - ‌‌🇨🇦CA_8882+@WangCai_1 2
+      - ‌‌🇨🇦CA_8881+@WangCai_1
+      - ‌‌🇨🇦CA_8888+@WangCai_1 5
+      - ‌‌🇨🇦CA_7002+@WangCai_1 5
+      - ‌‌🇨🇦CA_2376+@WangCai_1 2
+      - ‌‌🇨🇦CA_5600+@WangCai_1 2
+      - ‌‌🇨🇦CA_8881+@WangCai_1 2
+      - ‌‌🇨🇦CA_5500+@WangCai_1
+      - ‌‌🇨🇦CA_5003+@WangCai_1
+      - ‌‌🇨🇦CA_5600+@WangCai_1 3
+      - ‌‌🇨🇦CA_8882+@WangCai_1 3
+      - ‌‌🇨🇦CA_8119+@WangCai_1 4
+      - ‌‌🇨🇦CA_6379+@WangCai_1 3
+      - ‌‌🇨🇦CA_7001+@WangCai_1
+      - US_5500+@WangCai_1 3
+      - US_8000+@WangCai_1
+      - ‌‌🇨🇦CA_6697+@WangCai_1 3
+      - ZZ_2709
+      - US_2375+@WangCai_1
+      - ‌‌🇨🇦CA_5600+@WangCai_1 4
+      - ‌‌🇨🇦CA_2375+@WangCai_1
+      - ‌‌🇨🇦CA_8008+@WangCai_1 3
+      - ‌‌🇨🇦CA_8090+@WangCai_1 2
+      - ‌‌🇨🇦CA_8080+@WangCai_1
+      - ‌‌🇨🇦CA_8009+@WangCai_1
+      - ‌‌🇨🇦CA_8882+@WangCai_1 4
+      - US_5601+@WangCai_1 2
+      - US_8882+@WangCai_1 2
+      - ‌‌🇨🇦CA_6697+@WangCai_1 4
+      - US_8090+@WangCai_1
+      - ‌‌🇨🇦CA_5003+@WangCai_1 2
+      - ‌‌🇨🇦CA_6379+@WangCai_1 4
+      - ‌‌🇨🇦CA_8009+@WangCai_1 2
+      - ‌‌🇨🇦CA_7002+@WangCai_1 6
+      - US_9102+@WangCai_1 2
+      - US_7002+@WangCai_1
+      - ‌‌🇨🇦CA_8080+@WangCai_1 2
+      - ‌‌🇨🇦CA_5601+@WangCai_1
+      - US_8119+@WangCai_1
       - US_1282+|47.13Mb
-      - US_1287+|46.75Mb
-      - US_1283+|47.27Mb
-      - US_1290+|47.28Mb
-      - US_1286+|23.16Mb
-      - ZZ_2619+|+4.57Mb
-      - CA_05+TG@peekfun
-      - ZZ_2618+|36.96Mb
-      - US_1339+|47.69Mb
+      - ‌‌🇨🇦CA_5000+@WangCai_1 4
+      - ‌‌🇨🇦CA_8008+@WangCai_1 4
+      - ‌‌🇨🇦CA_5004+@WangCai_1 3
+      - ‌‌🇨🇦CA_7001+@WangCai_1 2
+      - ‌‌🇨🇦CA_5500+@WangCai_1 2
+      - ‌‌🇨🇦CA_5500+@WangCai_1 3
+      - US_129
+      - US_8888+@WangCai_1
+      - ‌‌🇨🇦CA_8881+@WangCai_1 3
+      - ‌‌🇨🇦CA_6379+@WangCai_1 5
+      - US_7306+@WangCai_1
+      - ‌‌🇨🇦CA_8881+@WangCai_1 4
+      - US_7001+@WangCai_1 2
+      - ‌‌🇨🇦CA_8882+@WangCai_1 5
+      - ‌‌🇨🇦CA_5600+@WangCai_1 5
+      - US_2375+@WangCai_1 2
+      - ‌‌🇨🇦CA_7001+@WangCai_1 3
+      - US_8009+@WangCai_1 2
+      - ‌‌🇨🇦CA_0443+@WangCai_1 4
+      - US_6679+@WangCai_1 2
+      - US_127
+      - CN_346
+      - US_8008+@WangCai_1 2
+      - US_8881+@WangCai_1 2
+      - ‌‌🇨🇦CA_7001+@WangCai_1 4
+      - US_7002+@WangCai_1 2
+      - _商店：8du.shop 4
+      - US_3306+@WangCai_1 2
+      - ‌‌🇨🇦CA_8000+@WangCai_1 3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -172,18 +1340,164 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK_719+|20.97Mb
-      - US_1340+|18.57Mb
+      - _商店：8du.shop
+      - _商店：8du.shop 2
+      - CN_342
+      - _商店：8du.shop 3
       - US_1285+|47.15Mb
+      - Relay_🇬🇧GB-🇬🇧GB_17
+      - ‌‌🇨🇦CA_6679+@WangCai_1
+      - ‌‌🇨🇦CA_6679+@WangCai_1 2
+      - _US_美国
+      - US_5003+@WangCai_1
+      - ‌‌🇨🇦CA_8091+@WangCai_1
+      - ‌‌🇨🇦CA_8000+@WangCai_1
+      - ‌‌🇨🇦CA_8091+@WangCai_1 2
+      - ‌‌🇨🇦CA_8091+@WangCai_1 3
+      - ‌‌🇨🇦CA_5000+@WangCai_1
+      - ‌‌🇨🇦CA_9102+@WangCai_1
+      - ‌‌🇨🇦CA_7307+@WangCai_1
+      - ‌‌🇨🇦CA_8000+@WangCai_1 2
+      - ‌‌🇨🇦CA_3389+@WangCai_1
+      - US_8118+@WangCai_1
+      - ‌‌🇨🇦CA_0443+@WangCai_1
+      - US_8009+@WangCai_1
+      - ‌‌🇨🇦CA_8888+@WangCai_1
+      - ‌‌🇨🇦CA_6679+@WangCai_1 3
+      - ‌‌🇨🇦CA_3306+@WangCai_1
+      - ‌‌🇨🇦CA_5000+@WangCai_1 2
+      - ‌‌🇨🇦CA_6379+@WangCai_1
+      - US_9101+@WangCai_1
+      - US_8882+@WangCai_1
+      - ‌‌🇨🇦CA_8119+@WangCai_1
+      - ‌‌🇨🇦CA_7002+@WangCai_1
+      - US_7307+@WangCai_1
+      - US_5000+@WangCai_1
+      - ‌‌🇨🇦CA_5004+@WangCai_1
+      - ‌‌🇨🇦CA_5600+@WangCai_1
+      - ‌‌🇨🇦CA_8008+@WangCai_1
+      - ‌‌🇨🇦CA_8119+@WangCai_1 2
+      - US_0443+@WangCai_1
+      - ‌‌🇨🇦CA_5001+@WangCai_1
+      - ‌‌🇨🇦CA_6697+@WangCai_1
+      - US_5500+@WangCai_1
+      - US_9101+@WangCai_1 2
+      - US_2376+@WangCai_1
+      - ‌‌🇨🇦CA_7307+@WangCai_1 2
+      - US_8881+@WangCai_1
+      - ‌‌🇨🇦CA_2376+@WangCai_1
+      - ‌‌🇨🇦CA_8119+@WangCai_1 3
+      - ‌‌🇨🇦CA_8888+@WangCai_1 2
+      - ZZ_256
+      - ‌‌🇨🇦CA_8118+@WangCai_1
+      - ‌‌🇨🇦CA_8090+@WangCai_1
+      - ‌‌🇨🇦CA_5001+@WangCai_1 2
+      - ‌‌🇨🇦CA_0443+@WangCai_1 2
+      - ‌‌🇨🇦CA_7002+@WangCai_1 2
+      - ‌‌🇨🇦CA_6697+@WangCai_1 2
+      - US_5601+@WangCai_1
+      - US_5001+@WangCai_1
+      - US_8080+@WangCai_1
+      - ‌‌🇨🇦CA_8888+@WangCai_1 3
+      - US_8008+@WangCai_1
+      - US_7001+@WangCai_1
+      - US_3306+@WangCai_1
+      - ‌‌🇨🇦CA_7307+@WangCai_1 3
+      - ‌‌🇨🇦CA_9101+@WangCai_1
+      - ‌‌🇨🇦CA_8118+@WangCai_1 2
+      - ‌‌🇨🇦CA_6679+@WangCai_1 4
+      - ‌‌🇨🇦CA_9101+@WangCai_1 2
+      - ‌‌🇨🇦CA_8888+@WangCai_1 4
+      - ‌‌🇨🇦CA_6379+@WangCai_1 2
+      - ‌‌🇨🇦CA_8091+@WangCai_1 4
+      - ‌‌🇨🇦CA_5000+@WangCai_1 3
+      - ‌‌🇨🇦CA_7002+@WangCai_1 3
+      - ‌‌🇨🇦CA_7002+@WangCai_1 4
+      - ‌‌🇨🇦CA_5004+@WangCai_1 2
+      - US_5000+@WangCai_1 2
+      - US_8118+@WangCai_1 2
+      - ‌‌🇨🇦CA_0443+@WangCai_1 3
+      - ‌‌🇨🇦CA_8008+@WangCai_1 2
+      - US_5003+@WangCai_1 2
+      - ‌‌🇨🇦CA_8882+@WangCai_1
+      - ZZ_255
+      - ‌‌🇨🇦CA_7306+@WangCai_1
+      - US_9102+@WangCai_1
+      - US_5600+@WangCai_1
+      - US_5600+@WangCai_1 2
+      - US_5500+@WangCai_1 2
+      - ‌‌🇨🇦CA_8091+@WangCai_1 5
+      - US_5004+@WangCai_1
+      - US_6679+@WangCai_1
+      - ‌‌🇨🇦CA_8882+@WangCai_1 2
+      - ‌‌🇨🇦CA_8881+@WangCai_1
+      - ‌‌🇨🇦CA_8888+@WangCai_1 5
+      - ‌‌🇨🇦CA_7002+@WangCai_1 5
+      - ‌‌🇨🇦CA_2376+@WangCai_1 2
+      - ‌‌🇨🇦CA_5600+@WangCai_1 2
+      - ‌‌🇨🇦CA_8881+@WangCai_1 2
+      - ‌‌🇨🇦CA_5500+@WangCai_1
+      - ‌‌🇨🇦CA_5003+@WangCai_1
+      - ‌‌🇨🇦CA_5600+@WangCai_1 3
+      - ‌‌🇨🇦CA_8882+@WangCai_1 3
+      - ‌‌🇨🇦CA_8119+@WangCai_1 4
+      - ‌‌🇨🇦CA_6379+@WangCai_1 3
+      - ‌‌🇨🇦CA_7001+@WangCai_1
+      - US_5500+@WangCai_1 3
+      - US_8000+@WangCai_1
+      - ‌‌🇨🇦CA_6697+@WangCai_1 3
+      - ZZ_2709
+      - US_2375+@WangCai_1
+      - ‌‌🇨🇦CA_5600+@WangCai_1 4
+      - ‌‌🇨🇦CA_2375+@WangCai_1
+      - ‌‌🇨🇦CA_8008+@WangCai_1 3
+      - ‌‌🇨🇦CA_8090+@WangCai_1 2
+      - ‌‌🇨🇦CA_8080+@WangCai_1
+      - ‌‌🇨🇦CA_8009+@WangCai_1
+      - ‌‌🇨🇦CA_8882+@WangCai_1 4
+      - US_5601+@WangCai_1 2
+      - US_8882+@WangCai_1 2
+      - ‌‌🇨🇦CA_6697+@WangCai_1 4
+      - US_8090+@WangCai_1
+      - ‌‌🇨🇦CA_5003+@WangCai_1 2
+      - ‌‌🇨🇦CA_6379+@WangCai_1 4
+      - ‌‌🇨🇦CA_8009+@WangCai_1 2
+      - ‌‌🇨🇦CA_7002+@WangCai_1 6
+      - US_9102+@WangCai_1 2
+      - US_7002+@WangCai_1
+      - ‌‌🇨🇦CA_8080+@WangCai_1 2
+      - ‌‌🇨🇦CA_5601+@WangCai_1
+      - US_8119+@WangCai_1
       - US_1282+|47.13Mb
-      - US_1287+|46.75Mb
-      - US_1283+|47.27Mb
-      - US_1290+|47.28Mb
-      - US_1286+|23.16Mb
-      - ZZ_2619+|+4.57Mb
-      - CA_05+TG@peekfun
-      - ZZ_2618+|36.96Mb
-      - US_1339+|47.69Mb
+      - ‌‌🇨🇦CA_5000+@WangCai_1 4
+      - ‌‌🇨🇦CA_8008+@WangCai_1 4
+      - ‌‌🇨🇦CA_5004+@WangCai_1 3
+      - ‌‌🇨🇦CA_7001+@WangCai_1 2
+      - ‌‌🇨🇦CA_5500+@WangCai_1 2
+      - ‌‌🇨🇦CA_5500+@WangCai_1 3
+      - US_129
+      - US_8888+@WangCai_1
+      - ‌‌🇨🇦CA_8881+@WangCai_1 3
+      - ‌‌🇨🇦CA_6379+@WangCai_1 5
+      - US_7306+@WangCai_1
+      - ‌‌🇨🇦CA_8881+@WangCai_1 4
+      - US_7001+@WangCai_1 2
+      - ‌‌🇨🇦CA_8882+@WangCai_1 5
+      - ‌‌🇨🇦CA_5600+@WangCai_1 5
+      - US_2375+@WangCai_1 2
+      - ‌‌🇨🇦CA_7001+@WangCai_1 3
+      - US_8009+@WangCai_1 2
+      - ‌‌🇨🇦CA_0443+@WangCai_1 4
+      - US_6679+@WangCai_1 2
+      - US_127
+      - CN_346
+      - US_8008+@WangCai_1 2
+      - US_8881+@WangCai_1 2
+      - ‌‌🇨🇦CA_7001+@WangCai_1 4
+      - US_7002+@WangCai_1 2
+      - _商店：8du.shop 4
+      - US_3306+@WangCai_1 2
+      - ‌‌🇨🇦CA_8000+@WangCai_1 3
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
